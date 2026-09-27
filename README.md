@@ -2,6 +2,8 @@
 
 Le **cache-cache grandeur nature**, en Wi-Fi ou en 4G/5G, avec les **Android et les iPhone** dans la même partie.
 
+**👉 Site de téléchargement : https://laziizaa.github.io/cache-cache-releases/**
+
 **Version actuelle : 2.3** (2026-09-27)
 
 • Mise à jour automatique de l'appli

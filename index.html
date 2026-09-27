@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cache-Cache</title>
+<meta name="description" content="Le cache-cache grandeur nature sur ton téléphone : sonar, QR « Touché », radar Bluetooth, Grande traque. Gratuit, sans pub, Android et iPhone.">
+<meta name="theme-color" content="#0B0A1A">
+<meta property="og:title" content="Cache-Cache — le cache-cache grandeur nature">
+<meta property="og:description" content="Sonar, QR « Touché », radar Bluetooth, Grande traque… Gratuit, sans pub, Android et iPhone ensemble.">
+<meta property="og:image" content="assets/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/fonts.css">
+<style>
+  :root {
+    --night: #0B0A1A; --night2: #16113A; --card: #1c1642; --line: rgba(255,255,255,.12);
+    --text: #F4F1FF; --soft: #c9c2ee; --mute: #9a92c9;
+    --violet: #7C5CFF; --pink: #FF5CA8; --mint: #2EE6A6; --mint2: #0FA873; --amber: #FFB547; --sky: #4CC9F0;
+    --display: 'Fredoka', 'Nunito', system-ui, sans-serif; --body: 'Nunito', system-ui, sans-serif;
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--night); color: var(--text); font: 500 17px/1.6 var(--body); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  a { color: var(--mint); }
+  img, video { max-width: 100%; display: block; }
+  .sky { position: fixed; inset: 0; z-index: -1; background: radial-gradient(120% 70% at 85% -10%, #3b2799 0%, #1d1553 38%, var(--night) 74%); }
+  .sky canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .wrap { max-width: 1060px; margin: 0 auto; padding-inline: 20px; }
+  h1, h2, h3 { font-family: var(--display); font-weight: 600; line-height: 1.08; margin: 0; text-wrap: balance; }
+  h2 { font-size: clamp(32px, 6vw, 48px); }
+  .eyebrow { font: 800 13px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--mint); }
+  section { padding-block: 64px; }
+
+  /* en-tête */
+  .top { display: flex; align-items: center; justify-content: space-between; padding-block: 18px; }
+  .top .mini { display: flex; align-items: center; gap: 10px; font: 600 20px var(--display); text-decoration: none; color: var(--text); }
+  .top .mini img { width: 36px; height: 36px; border-radius: 10px; }
+  .top nav { display: flex; gap: 18px; font-weight: 800; font-size: 15px; }
+  .top nav a { color: var(--soft); text-decoration: none; }
+  .top nav a:hover, .top nav a:focus-visible { color: var(--text); }
+
+  /* héros */
+  .hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; padding-block: 24px 56px; }
+  .logo { width: min(250px, 64vw); height: auto; overflow: visible; filter: drop-shadow(0 22px 44px rgba(46,230,166,.2)); }
+  .logo .peek { animation: peek 7s ease-in-out infinite; transform-origin: 100px 90px; }
+  .logo .pupils { animation: look 7s ease-in-out infinite; }
+  .logo .lids { animation: blink 7s linear infinite; transform-origin: 100px 78px; transform-box: view-box; }
+  .logo .moon { animation: glow 5s ease-in-out infinite; }
+  .logo .sway { animation: sway 5s ease-in-out infinite; transform-origin: 100px 150px; }
+  @keyframes peek { 0%, 4% { transform: translateY(26px); } 12%, 82% { transform: translateY(0); } 90%, 100% { transform: translateY(26px); } }
+  @keyframes look { 0%, 20% { transform: translateX(0); } 26%, 40% { transform: translateX(-5px); } 46%, 60% { transform: translateX(5px); } 66%, 100% { transform: translateX(0); } }
+  @keyframes blink { 0%, 62% { transform: scaleY(0); } 64% { transform: scaleY(1); } 66%, 100% { transform: scaleY(0); } }
+  @keyframes glow { 50% { opacity: .75; } }
+  @keyframes sway { 50% { transform: rotate(-1.2deg) scale(1.01); } }
+  .brand { font: 700 clamp(56px, 7.8vw, 84px)/1 var(--display); margin-top: 6px; white-space: nowrap;
+    background: linear-gradient(180deg, #fff 30%, #d7ccff); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .brand i { font-style: normal; color: var(--mint); -webkit-text-fill-color: var(--mint); }
+  .tagline { font: 600 clamp(21px, 3.4vw, 27px)/1.3 var(--display); color: var(--soft); margin: 14px 0 26px; max-width: 30ch; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 64px; padding: 14px 28px; border-radius: 999px;
+    font: 600 21px/1.1 var(--display); text-decoration: none; color: #fff; border: 0; cursor: pointer; transition: transform .15s, box-shadow .15s; }
+  .btn small { display: block; font: 800 12.5px/1.2 var(--body); opacity: .85; letter-spacing: .02em; }
+  .btn .ic { font-size: 28px; line-height: 1; }
+  .btn.primary { background: linear-gradient(90deg, var(--violet), var(--pink)); box-shadow: 0 18px 50px rgba(255,92,168,.35); }
+  .btn.ghost { background: rgba(255,255,255,.07); border: 2px solid var(--line); }
+  .btn:hover { transform: translateY(-2px); }
+  .btn:focus-visible { outline: 3px solid var(--mint); outline-offset: 3px; }
+  .facts { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 18px; font-weight: 800; font-size: 14.5px; color: var(--mute); }
+  .facts b { color: var(--mint); }
+  .phone { position: relative; width: min(330px, 78vw); aspect-ratio: 9 / 16.8; margin-inline: auto; border-radius: 44px; padding: 11px;
+    background: linear-gradient(160deg, #2c2748, #0d0b1c); box-shadow: 0 0 0 2px rgba(255,255,255,.08), 0 40px 90px rgba(0,0,0,.55), 0 0 90px rgba(124,92,255,.25); }
+  .phone video, .phone img { width: 100%; height: 100%; object-fit: cover; border-radius: 34px; background: #000; }
+  .phone .sound { position: absolute; right: 22px; bottom: 22px; width: 46px; height: 46px; border-radius: 50%; border: 0; cursor: pointer;
+    background: rgba(11,10,26,.7); color: #fff; font-size: 21px; backdrop-filter: blur(6px); }
+  .qrbox { display: none; align-items: center; gap: 16px; margin-top: 22px; padding: 14px; border-radius: 22px; background: rgba(255,255,255,.05); border: 1px solid var(--line); max-width: 420px; }
+  .qrbox img { width: 110px; height: 110px; border-radius: 12px; background: #fff; padding: 6px; }
+  .qrbox p { margin: 0; font-size: 15px; color: var(--soft); }
+  .is-desktop .qrbox { display: flex; }
+
+  /* déroulé d'une partie */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 30px; counter-reset: s; }
+  .step { position: relative; padding: 26px 22px 22px; border-radius: 26px; background: rgba(28,22,66,.72); border: 1px solid var(--line); }
+  .step::before { counter-increment: s; content: counter(s); position: absolute; top: -18px; left: 22px; width: 40px; height: 40px; border-radius: 50%;
+    display: grid; place-items: center; font: 700 20px var(--display); background: var(--mint); color: var(--night); }
+  .step h3 { font-size: 22px; margin: 8px 0 6px; }
+  .step p { margin: 0; color: var(--soft); font-size: 15.5px; }
+
+  /* gadgets */
+  .feat { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 30px; }
+  .f { padding: 22px; border-radius: 24px; background: rgba(28,22,66,.55); border: 1px solid var(--line); }
+  .f .e { font-size: 34px; line-height: 1; }
+  .f h3 { font-size: 20px; margin: 12px 0 6px; }
+  .f p { margin: 0; font-size: 15px; color: var(--soft); }
+  .f.big { grid-column: span 2; background: linear-gradient(135deg, rgba(255,92,168,.22), rgba(124,92,255,.22)); }
+  .f.hunt { background: linear-gradient(135deg, rgba(46,230,166,.18), rgba(76,201,240,.16)); }
+
+  /* captures */
+  .shots { display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 26px 20px 12px; margin-inline: -20px; scrollbar-width: thin; }
+  .shots figure { flex: 0 0 min(220px, 58vw); margin: 0; scroll-snap-align: center; }
+  .shots img { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: 26px; border: 2px solid rgba(255,255,255,.1); box-shadow: 0 20px 50px rgba(0,0,0,.4); }
+  .shots figcaption { text-align: center; font-weight: 800; font-size: 14px; color: var(--mute); margin-top: 10px; }
+
+  /* installation */
+  .tabs { display: inline-flex; gap: 6px; padding: 6px; border-radius: 999px; background: rgba(255,255,255,.06); border: 1px solid var(--line); margin-top: 24px; }
+  .tabs button { border: 0; background: none; color: var(--soft); font: 600 18px var(--display); padding: 10px 22px; border-radius: 999px; cursor: pointer; }
+  .tabs button[aria-selected="true"] { background: var(--mint); color: var(--night); }
+  .panel { margin-top: 22px; padding: 26px; border-radius: 28px; background: rgba(28,22,66,.72); border: 1px solid var(--line); }
+  .panel ol { margin: 0; padding-left: 22px; display: grid; gap: 12px; }
+  .panel li { padding-left: 4px; }
+  .panel li b { color: var(--text); }
+  .panel p, .panel li { color: var(--soft); }
+  .note { margin-top: 18px; padding: 14px 16px; border-radius: 16px; background: rgba(255,181,71,.1); border: 1px solid rgba(255,181,71,.35); color: #ffe3b3; font-size: 15px; }
+  .copy { display: flex; gap: 8px; align-items: stretch; margin: 10px 0 4px; }
+  .copy code { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; padding: 12px 14px; border-radius: 12px; background: #0f0c26; border: 1px solid var(--line); font-size: 13.5px; color: var(--text); }
+  .copy button { border: 0; border-radius: 12px; padding: 0 16px; font: 800 14px var(--body); background: var(--violet); color: #fff; cursor: pointer; }
+  .panel .btn { margin-top: 18px; }
+
+  /* questions */
+  .faq { margin-top: 24px; display: grid; gap: 10px; }
+  .faq details { border-radius: 20px; background: rgba(28,22,66,.55); border: 1px solid var(--line); padding: 4px 20px; }
+  .faq summary { cursor: pointer; font: 600 19px/1.3 var(--display); padding: 14px 0; list-style: none; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: '+'; float: right; color: var(--mint); font-size: 24px; line-height: 1; }
+  .faq details[open] summary::after { content: '–'; }
+  .faq p { margin: 0 0 16px; color: var(--soft); }
+
+  footer { padding-block: 40px 90px; text-align: center; color: var(--mute); font-size: 14px; }
+  footer a { color: var(--soft); }
+
+  /* barre de téléchargement fixe (téléphones) */
+  .dock { position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: 5; display: none; transform: translateY(140%); transition: transform .3s; }
+  .dock .btn { width: 100%; }
+  .dock.show { transform: none; }
+  .is-mobile .dock { display: block; }
+
+  @media (max-width: 820px) {
+    .hero { grid-template-columns: 1fr; text-align: center; padding-top: 4px; }
+    .hero .logo, .tagline { margin-inline: auto; }
+    .cta, .facts { justify-content: center; }
+    .steps, .feat { grid-template-columns: 1fr; }
+    .f.big { grid-column: auto; }
+    .top nav { display: none; }
+    section { padding-block: 46px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .logo * { animation: none !important; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="sky" aria-hidden="true"><canvas id="stars"></canvas></div>
+
+<div class="wrap">
+  <header class="top">
+    <a class="mini" href="#"><img src="assets/favicon.png" alt=""> Cache-Cache</a>
+    <nav><a href="#jeu">Le jeu</a><a href="#installer">Installer</a><a href="#questions">Questions</a></nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <svg class="logo" viewBox="0 0 200 170" aria-hidden="true">
+          <defs>
+            <radialGradient id="lgGlow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#58ffc8" stop-opacity=".35"/><stop offset="1" stop-color="#58ffc8" stop-opacity="0"/></radialGradient>
+            <linearGradient id="lgBack" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1fbf8f"/><stop offset="1" stop-color="#0a6e55"/></linearGradient>
+            <linearGradient id="lgFront" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#52f5c2"/><stop offset="1" stop-color="#12a37a"/></linearGradient>
+          </defs>
+          <circle cx="100" cy="112" r="92" fill="url(#lgGlow)"/>
+          <path class="moon" d="M150 14a17 17 0 1 0 16.3 22.1a13.6 13.6 0 1 1 -16.3 -22.1z" fill="#FFD66B"/>
+          <g class="sway">
+            <g fill="url(#lgBack)"><circle cx="58" cy="116" r="30"/><circle cx="100" cy="98" r="40"/><circle cx="142" cy="116" r="30"/></g>
+            <g class="peek">
+              <ellipse cx="84" cy="84" rx="13.5" ry="16" fill="#fff"/><ellipse cx="116" cy="84" rx="13.5" ry="16" fill="#fff"/>
+              <g class="pupils"><circle cx="87" cy="87" r="7.5" fill="#150F33"/><circle cx="119" cy="87" r="7.5" fill="#150F33"/><circle cx="89.5" cy="84" r="2.4" fill="#fff"/><circle cx="121.5" cy="84" r="2.4" fill="#fff"/></g>
+              <g class="lids" fill="#139a74"><ellipse cx="84" cy="84" rx="14.5" ry="17"/><ellipse cx="116" cy="84" rx="14.5" ry="17"/></g>
+            </g>
+            <g fill="url(#lgFront)"><circle cx="44" cy="140" r="26"/><circle cx="76" cy="128" r="25"/><circle cx="100" cy="134" r="24"/><circle cx="124" cy="128" r="25"/><circle cx="156" cy="140" r="26"/><rect x="18" y="138" width="164" height="30" rx="15"/></g>
+            <g fill="#0c8a64" opacity=".5"><circle cx="60" cy="146" r="3"/><circle cx="92" cy="152" r="2.5"/><circle cx="130" cy="146" r="3"/><circle cx="150" cy="156" r="2.2"/><circle cx="40" cy="158" r="2.2"/><circle cx="112" cy="140" r="2"/></g>
+          </g>
+        </svg>
+        <h1 class="brand">Cache<i>-</i>Cache</h1>
+        <p class="tagline">Le cache-cache grandeur nature, avec ton téléphone dans la poche.</p>
+        <div class="cta" id="cta">
+          <a class="btn primary" id="dlAndroid" href="CacheCache.apk" download><span class="ic">🤖</span><span>Télécharger pour Android<small id="apkInfo">Fichier APK · gratuit</small></span></a>
+          <a class="btn ghost" id="dlIos" href="#installer" data-tab="ios"><span class="ic">🍏</span><span>Installer sur iPhone<small>avec AltStore ou Sideloadly</small></span></a>
+        </div>
+        <div class="facts"><span>Version <b id="ver">2.3</b></span><span>Gratuit</span><span>Sans pub</span><span>Sans compte</span><span>Jusqu'à 50 joueurs</span></div>
+        <div class="qrbox"><img id="qr" alt="QR code du site"><p><b>Sur ordinateur ?</b><br>Scanne ce code avec ton téléphone pour ouvrir cette page et installer le jeu.</p></div>
+      </div>
+      <div class="phone">
+        <video id="pub" src="assets/pub.mp4" poster="assets/pub.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Vidéo de présentation du jeu"></video>
+        <button class="sound" id="sound" type="button" aria-label="Activer le son">🔇</button>
+      </div>
+    </div>
+
+    <section id="jeu">
+      <p class="eyebrow">Une manche</p>
+      <h2>Le vrai cache-cache, avec des gadgets</h2>
+      <div class="steps">
+        <div class="step"><h3>On crée la partie</h3><p>Un joueur ouvre un salon. Sur le même Wi-Fi, il apparaît tout seul chez les autres. En 4G/5G, on partage un code à 6 caractères.</p></div>
+        <div class="step"><h3>Les chercheurs comptent</h3><p>Les autres partent se cacher pour de vrai, téléphone en poche. Le compte à rebours est le même pour tout le monde.</p></div>
+        <div class="step"><h3>La chasse commence</h3><p>Sonar, radar, QR code… Les chercheurs ont jusqu'à la fin du chrono pour trouver tout le monde.</p></div>
+      </div>
+
+      <div class="feat">
+        <div class="f big"><div class="e">📡</div><h3>Le sonar</h3><p>Le chercheur fait sonner le téléphone d'un caché, au volume du téléphone, même en mode silencieux. Il n'y a plus qu'à suivre le bruit.</p></div>
+        <div class="f"><div class="e">📷</div><h3>QR « Touché »</h3><p>Chaque caché a son QR code. Le chercheur le scanne pour valider : fini les disputes.</p></div>
+        <div class="f"><div class="e">🔥</div><h3>Radar Bluetooth</h3><p>Brûlant, chaud, tiède ou froid : le radar sent les cachés jusqu'à une trentaine de mètres.</p></div>
+        <div class="f"><div class="e">⚡</div><h3>Pouvoirs des cachés</h3><p>Leurre qui fait sonner un autre téléphone, bouclier anti-sonar, brouilleur de radar.</p></div>
+        <div class="f"><div class="e">🎲</div><h3>Des modes de jeu</h3><p>Contagion, Délivrance, Sardines, équipes au choix ou tirées au sort, zone GPS qui rétrécit.</p></div>
+        <div class="f big hunt"><div class="e">🌍</div><h3>Grande traque</h3><p>Un fugitif se cache dans toute la ville (de 2 à 50 km). Les chercheurs posent des questions : « Es-tu à moins de 2 km ? », « Dans quelle direction ? », « Je chauffe ? ». Le GPS répond tout seul et la carte grise les zones éliminées.</p></div>
+        <div class="f"><div class="e">📶</div><h3>Wi-Fi ou 4G/5G</h3><p>Sur le même réseau ou à distance avec un code, et même les deux dans la même partie. Les échanges sont chiffrés.</p></div>
+      </div>
+
+      <div class="shots" aria-label="Captures d'écran">
+        <figure><img src="assets/shots/accueil.jpg" alt="Écran d'accueil" loading="lazy"><figcaption>L'accueil</figcaption></figure>
+        <figure><img src="assets/shots/salon.jpg" alt="Salon avec les équipes" loading="lazy"><figcaption>Le salon en équipes</figcaption></figure>
+        <figure><img src="assets/shots/chercheur.jpg" alt="Écran du chercheur" loading="lazy"><figcaption>Côté chercheur</figcaption></figure>
+        <figure><img src="assets/shots/sonar.jpg" alt="Sonar reçu par un caché" loading="lazy"><figcaption>Sonar reçu !</figcaption></figure>
+        <figure><img src="assets/shots/cache.jpg" alt="Écran du caché" loading="lazy"><figcaption>Côté caché</figcaption></figure>
+        <figure><img src="assets/shots/qr.jpg" alt="QR code Touché" loading="lazy"><figcaption>Le QR « Touché »</figcaption></figure>
+        <figure><img src="assets/shots/resultats.jpg" alt="Podium de fin de manche" loading="lazy"><figcaption>Les résultats</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="installer">
+      <p class="eyebrow">Installation</p>
+      <h2>Installer Cache-Cache</h2>
+      <div class="tabs" role="tablist">
+        <button role="tab" id="tAndroid" aria-selected="true" aria-controls="pAndroid" data-tab="android">🤖 Android</button>
+        <button role="tab" id="tIos" aria-selected="false" aria-controls="pIos" data-tab="ios">🍏 iPhone</button>
+      </div>
+
+      <div class="panel" role="tabpanel" id="pAndroid" aria-labelledby="tAndroid">
+        <ol>
+          <li><b>Télécharge le fichier</b> avec le bouton ci-dessous, depuis ton téléphone Android.</li>
+          <li><b>Ouvre-le</b> (notification « Téléchargement terminé » ou dossier Téléchargements).</li>
+          <li>Si Android le demande, <b>autorise ton navigateur à installer des applis</b>, puis reviens en arrière.</li>
+          <li>Si Google Play Protect affiche un avertissement, touche <b>« Plus de détails » puis « Installer quand même »</b> : c'est normal pour une appli qui ne passe pas par le Play Store.</li>
+          <li>C'est installé. Ensuite, <b>l'appli se met à jour toute seule</b> : elle télécharge la nouvelle version et te propose de l'installer.</li>
+        </ol>
+        <a class="btn primary" href="CacheCache.apk" download><span class="ic">🤖</span><span>Télécharger pour Android<small id="apkInfo2">Fichier APK · gratuit</small></span></a>
+        <p class="note">Android 6 ou plus récent. Pour jouer à plusieurs, tout le monde installe l'appli : Android et iPhone peuvent jouer dans la même partie.</p>
+      </div>
+
+      <div class="panel" role="tabpanel" id="pIos" aria-labelledby="tIos" hidden>
+        <p>Apple ne permet pas d'installer une appli en dehors de l'App Store en un clic. Deux solutions gratuites existent.</p>
+        <ol>
+          <li><b>Avec AltStore</b> (mises à jour automatiques) : installe AltStore depuis <a href="https://altstore.io" rel="noopener">altstore.io</a>, puis dans AltStore › Sources › <b>+</b>, ajoute cette adresse :
+            <div class="copy"><code id="altsrc">https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json</code><button type="button" data-copy="altsrc">Copier</button></div>
+            et installe Cache-Cache depuis la source.</li>
+          <li><b>Avec Sideloadly</b> (Windows ou Mac) : télécharge le fichier iPhone ci-dessous sur ton ordinateur, branche ton iPhone et glisse le fichier dans <a href="https://sideloadly.io" rel="noopener">Sideloadly</a>.</li>
+          <li>Sur l'iPhone : Réglages › Général › VPN et gestion de l'appareil › <b>fais confiance</b> à ton identifiant Apple. Depuis iOS 16, active aussi le <b>mode développeur</b>.</li>
+        </ol>
+        <a class="btn primary" id="dlIpa" href="CacheCache-iOS.ipa" download><span class="ic">🍏</span><span>Fichier pour iPhone (.ipa)<small id="ipaInfo">à installer avec Sideloadly</small></span></a>
+        <p class="note">Avec un identifiant Apple gratuit, Apple limite l'appli à 7 jours : AltStore la renouvelle tout seul, avec Sideloadly il suffit de la réinstaller (tes stats sont gardées). L'appli te prévient quand une nouvelle version sort.</p>
+      </div>
+    </section>
+
+    <section id="questions">
+      <p class="eyebrow">Questions</p>
+      <h2>Questions fréquentes</h2>
+      <div class="faq">
+        <details><summary>C'est vraiment gratuit ?</summary><p>Oui : pas de pub, pas d'achat dans l'appli, pas de compte à créer.</p></details>
+        <details><summary>Faut-il Internet pour jouer ?</summary><p>Non. Sur le même Wi-Fi (ou le partage de connexion d'un téléphone), tout se passe en local. Internet sert seulement aux parties à distance en 4G/5G, avec le code de la partie.</p></details>
+        <details><summary>Pourquoi l'appli n'est pas sur le Play Store ou l'App Store ?</summary><p>Elle est distribuée directement ici, gratuitement. Sur Android, l'installation d'un fichier APK est prévue par le système. Sur iPhone, Apple impose AltStore ou Sideloadly pour les applis hors App Store.</p></details>
+        <details><summary>Combien de joueurs ?</summary><p>De 2 à 50 joueurs par partie, en solo ou en 2 à 4 équipes.</p></details>
+        <details><summary>Et mes données ?</summary><p>Aucune donnée personnelle n'est collectée : ton pseudo et tes stats restent sur ton téléphone. Les parties par Internet sont chiffrées de bout en bout. Détails dans la <a href="politique-confidentialite.html">politique de confidentialité</a>.</p></details>
+        <details><summary>Comment avoir les nouvelles versions ?</summary><p>L'appli vérifie toute seule s'il existe une nouvelle version. Sur Android, elle la télécharge et te propose de l'installer. Sur iPhone, elle t'affiche une alerte, et AltStore peut faire la mise à jour pour toi.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Cache-Cache <span id="ver2">2.3</span> <span id="date"></span> · créé par Nocteris</p>
+    <p><a href="politique-confidentialite.html">Politique de confidentialité</a> · <a href="https://github.com/LaZiiZaa/cache-cache-releases" rel="noopener">Fichiers et historique des versions</a></p>
+  </footer>
+</div>
+
+<div class="dock" id="dock"><a class="btn primary" id="dockBtn" href="CacheCache.apk" download><span class="ic">🤖</span><span>Télécharger pour Android</span></a></div>
+
+<script src="assets/qrcode.js"></script>
+<script>
+(function () {
+  'use strict';
+  var $ = function (s) { return document.querySelector(s); };
+  var ua = navigator.userAgent || '';
+  var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var android = /Android/i.test(ua);
+  document.documentElement.classList.add(android || ios ? 'is-mobile' : 'is-desktop');
+
+  // onglets Android / iPhone
+  function tab(name) {
+    ['android', 'ios'].forEach(function (n) {
+      var t = document.querySelector('[role=tab][data-tab="' + n + '"]');
+      t.setAttribute('aria-selected', String(n === name));
+      (n === 'android' ? $('#pAndroid') : $('#pIos')).hidden = n !== name;
+    });
+  }
+  document.querySelectorAll('[data-tab]').forEach(function (b) { b.addEventListener('click', function () { tab(b.getAttribute('data-tab')); }); });
+
+  // bouton principal selon le téléphone
+  if (ios) {
+    tab('ios');
+    var cta = $('#cta');
+    cta.insertBefore($('#dlIos'), cta.firstChild);
+    $('#dlIos').className = 'btn primary'; $('#dlAndroid').className = 'btn ghost';
+    $('#dockBtn').href = '#installer'; $('#dockBtn').removeAttribute('download');
+    $('#dockBtn').innerHTML = '<span class="ic">🍏</span><span>Installer sur iPhone</span>';
+  }
+
+  // barre de téléchargement quand le bouton principal n'est plus visible
+  var dock = $('#dock');
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) { dock.classList.toggle('show', !es[0].isIntersecting); }).observe($('#cta'));
+  }
+
+  // version en ligne (latest.json, mis à jour à chaque publication)
+  function mo(n) { return (n / 1048576).toFixed(1).replace('.', ',') + ' Mo'; }
+  fetch('latest.json', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (m) {
+    var a = m.android || {}, i = m.ios || null;
+    $('#ver').textContent = $('#ver2').textContent = m.name || a.name || '';
+    if (m.date) { var d = new Date(m.date + 'T12:00:00'); $('#date').textContent = '· ' + d.toLocaleDateString('fr-FR', { day: 'numeric', month: 'long', year: 'numeric' }); }
+    if (a.size) $('#apkInfo').textContent = $('#apkInfo2').textContent = 'Fichier APK · ' + mo(a.size) + ' · version ' + (a.name || '');
+    if (i && i.size) $('#ipaInfo').textContent = mo(i.size) + ' · version ' + (i.name || '') + ' · à installer avec Sideloadly';
+    if (!i) { $('#dlIpa').style.display = 'none'; }
+  }).catch(function () { /* hors ligne : on garde les valeurs par défaut */ });
+
+  // QR code vers cette page (sur ordinateur)
+  try {
+    var q = qrcode(0, 'M'); q.addData(location.href.split('#')[0]); q.make();
+    $('#qr').src = q.createDataURL(4, 2);
+  } catch (e) { /* pas de QR */ }
+
+  // copier l'adresse AltStore
+  document.querySelectorAll('[data-copy]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var el = document.getElementById(b.getAttribute('data-copy')), txt = el.textContent;
+      var done = function () { b.textContent = 'Copié ✓'; setTimeout(function () { b.textContent = 'Copier'; }, 1800); };
+      if (navigator.clipboard) navigator.clipboard.writeText(txt).then(done, function () { select(el); });
+      else select(el);
+    });
+  });
+  function select(el) { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+
+  // son de la vidéo
+  var v = $('#pub'), snd = $('#sound');
+  snd.addEventListener('click', function () {
+    v.muted = !v.muted; snd.textContent = v.muted ? '🔇' : '🔊'; snd.setAttribute('aria-label', v.muted ? 'Activer le son' : 'Couper le son');
+    if (!v.muted) { v.currentTime = 0; v.play(); }
+  });
+
+  // étoiles
+  var c = $('#stars'), dpr = Math.min(2, window.devicePixelRatio || 1);
+  function stars() {
+    var w = innerWidth, h = innerHeight; c.width = w * dpr; c.height = h * dpr;
+    var g = c.getContext('2d'); g.scale(dpr, dpr); var s = 7;
+    var r = function () { s = (s * 16807) % 2147483647; return s / 2147483647; };
+    for (var i = 0; i < 110; i++) { g.globalAlpha = .2 + r() * .6; g.fillStyle = '#fff'; g.beginPath(); g.arc(r() * w, r() * h * .8, r() * 1.3 + .2, 0, 7); g.fill(); }
+  }
+  stars(); addEventListener('resize', stars);
+})();
+</script>
+</body>
+</html>

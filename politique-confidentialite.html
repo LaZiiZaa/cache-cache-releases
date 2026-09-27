@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cache-Cache – Politique de confidentialité</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:760px;margin:40px auto;padding:0 18px;color:#1d1a33}h1{font-size:28px}h2{font-size:20px;margin-top:28px}</style>
+</head><body>
+<h1>Politique de confidentialité — Cache-Cache</h1>
+<p>Dernière mise à jour : 27 septembre 2026. Éditeur : Nocteris.</p>
+<h2>En résumé</h2>
+<p>Cache-Cache ne demande aucun compte, n'affiche aucune publicité et <strong>ne collecte aucune donnée personnelle</strong>. Le développeur ne reçoit aucune information sur vous ni sur vos parties.</p>
+<h2>Données restant sur votre téléphone</h2>
+<ul>
+<li>Votre pseudo, avatar, couleur, statistiques et succès sont enregistrés uniquement sur votre téléphone.</li>
+<li>Un identifiant aléatoire est créé pour vous reconnaître lors d'une reconnexion à une partie.</li>
+</ul>
+<h2>Données échangées pendant une partie</h2>
+<ul>
+<li>Pseudo, avatar, actions de jeu et messages du salon sont échangés <strong>uniquement entre les joueurs de la partie</strong>.</li>
+<li>En Wi-Fi, les échanges restent sur le réseau local. En 4G/5G, ils transitent par un relais Internet (MQTT) et sont <strong>chiffrés de bout en bout</strong> (AES-GCM, clé dérivée du code de la partie) : le relais ne peut pas les lire.</li>
+<li>La force du signal Wi-Fi est transmise à l'hôte pour l'« indice Wi-Fi ».</li>
+</ul>
+<h2>Autorisations</h2>
+<ul>
+<li><strong>Position</strong> : utilisée pour la zone de jeu (seul l'indicateur « dans / hors zone » est envoyé à l'hôte) et, en mode Grande traque, envoyée au téléphone de l'hôte de la partie pour répondre automatiquement aux questions. La position du fugitif n'est jamais affichée aux autres joueurs ; celle des chercheurs est visible par les autres chercheurs. Rien n'est conservé après la partie.</li>
+<li><strong>Carte</strong> : les fonds de carte sont téléchargés depuis OpenStreetMap, qui reçoit comme tout site web l'adresse IP et la zone affichée.</li>
+<li><strong>Bluetooth</strong> : radar « chaud / froid » ; une balise anonyme (identifiant aléatoire de partie) est émise pendant la manche.</li>
+<li><strong>Caméra</strong> : scan des QR codes de jeu, sans enregistrement d'image.</li>
+<li><strong>Installation d'applis</strong> : uniquement pour installer une mise à jour de Cache-Cache (téléchargée depuis le site officiel ou depuis le téléphone de l'hôte), toujours après votre confirmation.</li>
+</ul>
+<h2>Mises à jour</h2>
+<p>L'appli vérifie de temps en temps s'il existe une nouvelle version en lisant un petit fichier public hébergé sur GitHub. Comme pour tout site web, GitHub reçoit alors l'adresse IP du téléphone ; aucune autre information n'est envoyée. Le téléchargement automatique des mises à jour peut être coupé dans Aide › Réglages.</p>
+<h2>Rapports de plantage</h2>
+<p>En cas de plantage, un rapport technique est enregistré sur le téléphone. Il n'est envoyé que si vous choisissez de le partager.</p>
+<h2>Enfants</h2>
+<p>L'appli ne collecte aucune donnée et convient à un public familial. Les échanges se font entre joueurs qui se connaissent (même réseau ou code de partie).</p>
+<h2>Contact</h2>
+<p>Pour toute question : via la fiche Google Play de l'application.</p>
+</body></html>

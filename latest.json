@@ -3,7 +3,7 @@
   "name": "2.3",
   "notes": "• Mise à jour automatique de l'appli\n• Version iPhone : Android et iPhone jouent ensemble (Wi-Fi et 4G/5G)\n• Les Android trouvent aussi les salons ouverts sur iPhone",
   "date": "2026-09-27",
-  "page": "https://github.com/LaZiiZaa/cache-cache-releases",
+  "page": "https://laziizaa.github.io/cache-cache-releases/",
   "app": "Cache-Cache",
   "android": {
     "version": 8,
@@ -20,7 +20,7 @@
     "sha256": "6a6fbf65ef9c2e54a5fd75a4e601bbf4eabc947d9e8fa1329e68f6eb07e0b7a3",
     "size": 984678,
     "date": "2026-09-27",
-    "page": "https://github.com/LaZiiZaa/cache-cache-releases#-iphone",
+    "page": "https://laziizaa.github.io/cache-cache-releases/#installer",
     "altstore": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json"
   }
 }
