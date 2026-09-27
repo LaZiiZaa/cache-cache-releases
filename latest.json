@@ -1,0 +1,16 @@
+{
+  "version": 8,
+  "name": "2.3",
+  "notes": "• Mise à jour automatique de l'appli\n• Version iPhone : Android et iPhone jouent ensemble (Wi-Fi et 4G/5G)\n• Les Android trouvent aussi les salons ouverts sur iPhone",
+  "date": "2026-09-27",
+  "page": "https://github.com/LaZiiZaa/cache-cache-releases",
+  "app": "Cache-Cache",
+  "android": {
+    "version": 8,
+    "name": "2.3",
+    "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache.apk",
+    "sha256": "16b67551baa2046745e080b46cf4ef0e5d5a8f7dd09b474c0aa486da8c20a5f0",
+    "size": 1129994,
+    "date": "2026-09-27"
+  }
+}
