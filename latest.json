@@ -12,5 +12,15 @@
     "sha256": "16b67551baa2046745e080b46cf4ef0e5d5a8f7dd09b474c0aa486da8c20a5f0",
     "size": 1129994,
     "date": "2026-09-27"
+  },
+  "ios": {
+    "version": 8,
+    "name": "2.3",
+    "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
+    "sha256": "6a6fbf65ef9c2e54a5fd75a4e601bbf4eabc947d9e8fa1329e68f6eb07e0b7a3",
+    "size": 984678,
+    "date": "2026-09-27",
+    "page": "https://github.com/LaZiiZaa/cache-cache-releases#-iphone",
+    "altstore": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json"
   }
 }

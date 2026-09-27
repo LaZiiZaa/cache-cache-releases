@@ -18,7 +18,7 @@ Le **cache-cache grandeur nature**, en Wi-Fi ou en 4G/5G, avec les **Android et 
 
 ## 📱 iPhone
 
-Version iPhone : bientôt disponible (compilation en cours).
+Version iPhone : disponible.
 
 - **Avec AltStore** (mises à jour automatiques) : dans AltStore › Sources › **+**, ajoute
   `https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json`, puis installe Cache-Cache.

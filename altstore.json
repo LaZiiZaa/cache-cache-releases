@@ -1,0 +1,40 @@
+{
+  "name": "Cache-Cache",
+  "identifier": "fr.nocteris.cachecache.source",
+  "sourceURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json",
+  "iconURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/icon.png",
+  "website": "https://github.com/LaZiiZaa/cache-cache-releases",
+  "apps": [
+    {
+      "name": "Cache-Cache",
+      "bundleIdentifier": "fr.nocteris.cachecache",
+      "developerName": "Nocteris",
+      "subtitle": "Le cache-cache grandeur nature",
+      "localizedDescription": "Cache-cache grandeur nature en Wi-Fi ou en 4G/5G, avec les Android et les iPhone : sonar, QR « Touché », radar Bluetooth, équipes, variantes et Grande traque.",
+      "iconURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/icon.png",
+      "tintColor": "2EE6A6",
+      "category": "games",
+      "versions": [
+        {
+          "version": "2.3",
+          "buildVersion": "8",
+          "date": "2026-09-27",
+          "localizedDescription": "• Mise à jour automatique de l'appli\n• Version iPhone : Android et iPhone jouent ensemble (Wi-Fi et 4G/5G)\n• Les Android trouvent aussi les salons ouverts sur iPhone",
+          "downloadURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
+          "size": 984678,
+          "minOSVersion": "15.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Parties sur le même Wi-Fi.",
+          "NSCameraUsageDescription": "QR « Touché » et photo de la Grande traque.",
+          "NSLocationWhenInUseUsageDescription": "Zone de jeu, Grande traque, partie active écran verrouillé.",
+          "NSBluetoothAlwaysUsageDescription": "Radar « chaud / froid »."
+        }
+      }
+    }
+  ],
+  "news": []
+}
