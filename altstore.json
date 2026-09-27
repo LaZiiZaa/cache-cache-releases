@@ -1,19 +1,63 @@
 {
   "name": "Cache-Cache",
   "identifier": "fr.nocteris.cachecache.source",
+  "subtitle": "Le cache-cache grandeur nature",
+  "description": "La source officielle de Cache-Cache : l'appli s'installe et se met à jour depuis AltStore.",
   "sourceURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json",
   "iconURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/icon.png",
+  "headerURL": "https://laziizaa.github.io/cache-cache-releases/assets/og.jpg",
   "website": "https://laziizaa.github.io/cache-cache-releases/",
+  "tintColor": "#2EE6A6",
+  "featuredApps": [
+    "fr.nocteris.cachecache"
+  ],
   "apps": [
     {
       "name": "Cache-Cache",
       "bundleIdentifier": "fr.nocteris.cachecache",
       "developerName": "Nocteris",
       "subtitle": "Le cache-cache grandeur nature",
-      "localizedDescription": "Cache-cache grandeur nature en Wi-Fi ou en 4G/5G, avec les Android et les iPhone : sonar, QR « Touché », radar Bluetooth, équipes, variantes et Grande traque.",
+      "localizedDescription": "Cache-cache grandeur nature en Wi-Fi ou en 4G/5G, Android et iPhone dans la même partie : sonar, QR « Touché », radar Bluetooth, pouvoirs, équipes, variantes et Grande traque. Gratuit, sans pub, sans compte.",
       "iconURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/icon.png",
-      "tintColor": "2EE6A6",
+      "tintColor": "#2EE6A6",
       "category": "games",
+      "screenshots": [
+        {
+          "imageURL": "https://laziizaa.github.io/cache-cache-releases/assets/shots/accueil.jpg",
+          "width": 540,
+          "height": 960
+        },
+        {
+          "imageURL": "https://laziizaa.github.io/cache-cache-releases/assets/shots/salon.jpg",
+          "width": 540,
+          "height": 960
+        },
+        {
+          "imageURL": "https://laziizaa.github.io/cache-cache-releases/assets/shots/chercheur.jpg",
+          "width": 540,
+          "height": 960
+        },
+        {
+          "imageURL": "https://laziizaa.github.io/cache-cache-releases/assets/shots/sonar.jpg",
+          "width": 540,
+          "height": 960
+        },
+        {
+          "imageURL": "https://laziizaa.github.io/cache-cache-releases/assets/shots/cache.jpg",
+          "width": 540,
+          "height": 960
+        },
+        {
+          "imageURL": "https://laziizaa.github.io/cache-cache-releases/assets/shots/qr.jpg",
+          "width": 540,
+          "height": 960
+        },
+        {
+          "imageURL": "https://laziizaa.github.io/cache-cache-releases/assets/shots/resultats.jpg",
+          "width": 540,
+          "height": 960
+        }
+      ],
       "versions": [
         {
           "version": "2.3",
@@ -22,16 +66,21 @@
           "localizedDescription": "• Mise à jour automatique de l'appli\n• Version iPhone : Android et iPhone jouent ensemble (Wi-Fi et 4G/5G)\n• Les Android trouvent aussi les salons ouverts sur iPhone",
           "downloadURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
           "size": 984678,
-          "minOSVersion": "15.0"
+          "minOSVersion": "15.0",
+          "sha256": "6a6fbf65ef9c2e54a5fd75a4e601bbf4eabc947d9e8fa1329e68f6eb07e0b7a3"
         }
       ],
       "appPermissions": {
         "entitlements": [],
         "privacy": {
-          "NSLocalNetworkUsageDescription": "Parties sur le même Wi-Fi.",
-          "NSCameraUsageDescription": "QR « Touché » et photo de la Grande traque.",
-          "NSLocationWhenInUseUsageDescription": "Zone de jeu, Grande traque, partie active écran verrouillé.",
-          "NSBluetoothAlwaysUsageDescription": "Radar « chaud / froid »."
+          "NSBluetoothAlwaysUsageDescription": "Le radar Bluetooth indique aux chercheurs si un joueur caché est tout près (brûlant) ou loin (froid).",
+          "NSBluetoothPeripheralUsageDescription": "Le radar Bluetooth indique aux chercheurs si un joueur caché est tout près (brûlant) ou loin (froid).",
+          "NSCameraUsageDescription": "La caméra sert à scanner le QR code « Touché » d'un joueur trouvé et à envoyer une photo pendant la Grande traque.",
+          "NSLocalNetworkUsageDescription": "Cache-Cache trouve et rejoint les parties des autres joueurs connectés au même Wi-Fi.",
+          "NSLocationAlwaysAndWhenInUseUsageDescription": "La localisation sert à la zone de jeu, à la Grande traque, et garde la partie active quand l'écran est verrouillé. Elle n'est jamais enregistrée.",
+          "NSLocationWhenInUseUsageDescription": "La localisation sert à la zone de jeu, à la Grande traque, et garde la partie active quand l'écran est verrouillé. Elle n'est jamais enregistrée.",
+          "NSPhotoLibraryAddUsageDescription": "Enregistre l'image des résultats de la partie.",
+          "NSPhotoLibraryUsageDescription": "Choisis une photo à envoyer aux chercheurs pendant la Grande traque."
         }
       }
     }

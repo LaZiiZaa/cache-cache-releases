@@ -117,6 +117,47 @@
   .copy code { flex: 1; min-width: 0; overflow-x: auto; white-space: nowrap; padding: 12px 14px; border-radius: 12px; background: #0f0c26; border: 1px solid var(--line); font-size: 13.5px; color: var(--text); }
   .copy button { border: 0; border-radius: 12px; padding: 0 16px; font: 800 14px var(--body); background: var(--violet); color: #fff; cursor: pointer; }
   .panel .btn { margin-top: 18px; }
+  [hidden] { display: none !important; }
+
+  /* iPhone : AltStore pas à pas */
+  .lead { margin: 0 0 18px; font-size: 17.5px; }
+  .lead b { color: var(--text); }
+  .stage { margin-top: 16px; padding: 22px; border-radius: 24px; background: rgba(11,10,26,.45); border: 1px solid var(--line); scroll-margin-top: 16px; }
+  .stage-h { display: flex; gap: 14px; align-items: center; margin-bottom: 16px; }
+  .num { flex: 0 0 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; font: 700 22px var(--display); background: var(--mint); color: var(--night); }
+  .stage h3 { font-size: 24px; }
+  .where { margin: 3px 0 0; font-weight: 800; font-size: 14px; color: var(--mute) !important; }
+  .ostabs { margin: 0 0 16px; }
+  .ostabs button { font-size: 16px; padding: 8px 18px; }
+  .chip { display: inline-block; margin: 8px 8px 0 0; padding: 7px 15px; border-radius: 999px; background: rgba(255,255,255,.08); border: 1px solid var(--line);
+    font-weight: 800; font-size: 14.5px; color: var(--text); text-decoration: none; }
+  .chip:hover, .chip:focus-visible { border-color: var(--mint); }
+  .panel li .btn { margin-top: 12px; }
+  .btn.alt { background: linear-gradient(90deg, var(--mint), var(--sky)); color: var(--night); box-shadow: 0 14px 40px rgba(46,230,166,.25); min-height: 58px; font-size: 19px; }
+  .panel code.k { padding: 1px 7px; border-radius: 7px; background: #0f0c26; border: 1px solid var(--line); font-size: 14px; color: var(--text); }
+  .sub { margin: 18px 0 10px; font-weight: 800; color: var(--text) !important; }
+  .hint { margin: 14px 0 0; font-size: 14.5px; color: var(--mute) !important; }
+  .checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .checks li { position: relative; padding-left: 30px; }
+  .checks li::before { content: '✓'; position: absolute; left: 0; top: 0; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center;
+    background: rgba(46,230,166,.18); color: var(--mint); font-weight: 900; font-size: 13px; margin-top: 2px; }
+  .sendpc { display: none; gap: 10px 14px; align-items: center; justify-content: space-between; flex-wrap: wrap; margin-bottom: 16px; padding: 14px 16px;
+    border-radius: 16px; background: rgba(76,201,240,.1); border: 1px solid rgba(76,201,240,.35); }
+  .sendpc p { margin: 0; font-size: 15px; color: #d4f2ff !important; }
+  .sendpc button { border: 0; border-radius: 999px; padding: 10px 18px; font: 800 14.5px var(--body); background: var(--sky); color: var(--night); cursor: pointer; }
+  .is-ios .sendpc { display: flex; }
+  .qrmini { display: none; gap: 16px; align-items: center; margin-top: 16px; }
+  .qrmini img { width: 128px; height: 128px; border-radius: 12px; background: #fff; padding: 6px; flex: none; }
+  .qrmini p { margin: 0; font-size: 15px; }
+  .is-desktop .qrmini { display: flex; }
+  .is-desktop #openAlt { display: none; }
+  details.other { margin-top: 16px; border-radius: 20px; background: rgba(11,10,26,.35); border: 1px solid var(--line); padding: 4px 20px 4px; }
+  details.other summary { cursor: pointer; font: 600 18px/1.3 var(--display); padding: 14px 0; list-style: none; color: var(--text); }
+  details.other summary::-webkit-details-marker { display: none; }
+  details.other summary::after { content: '+'; float: right; color: var(--mint); font-size: 24px; line-height: 1; }
+  details.other[open] summary::after { content: '–'; }
+  details.other[open] { padding-bottom: 20px; }
+  details.other p { margin: 14px 0 0; font-size: 15px; }
 
   /* questions */
   .faq { margin-top: 24px; display: grid; gap: 10px; }
@@ -144,6 +185,10 @@
     .f.big { grid-column: auto; }
     .top nav { display: none; }
     section { padding-block: 46px; }
+    .panel { padding: 18px; }
+    .stage { padding: 18px 16px; }
+    .stage h3 { font-size: 22px; }
+    .btn.alt, .panel .btn { width: 100%; }
   }
   @media (prefers-reduced-motion: reduce) { .logo * { animation: none !important; } html { scroll-behavior: auto; } }
 </style>
@@ -183,7 +228,7 @@
         <p class="tagline">Le cache-cache grandeur nature, avec ton téléphone dans la poche.</p>
         <div class="cta" id="cta">
           <a class="btn primary" id="dlAndroid" href="CacheCache.apk" download><span class="ic">🤖</span><span>Télécharger pour Android<small id="apkInfo">Fichier APK · gratuit</small></span></a>
-          <a class="btn ghost" id="dlIos" href="#installer" data-tab="ios"><span class="ic">🍏</span><span>Installer sur iPhone<small>avec AltStore ou Sideloadly</small></span></a>
+          <a class="btn ghost" id="dlIos" href="#installer" data-tab="ios"><span class="ic">🍏</span><span>Installer sur iPhone<small>avec AltStore · gratuit</small></span></a>
         </div>
         <div class="facts"><span>Version <b id="ver">2.3</b></span><span>Gratuit</span><span>Sans pub</span><span>Sans compte</span><span>Jusqu'à 50 joueurs</span></div>
         <div class="qrbox"><img id="qr" alt="QR code du site"><p><b>Sur ordinateur ?</b><br>Scanne ce code avec ton téléphone pour ouvrir cette page et installer le jeu.</p></div>
@@ -245,16 +290,68 @@
       </div>
 
       <div class="panel" role="tabpanel" id="pIos" aria-labelledby="tIos" hidden>
-        <p>Apple ne permet pas d'installer une appli en dehors de l'App Store en un clic. Deux solutions gratuites existent.</p>
-        <ol>
-          <li><b>Avec AltStore</b> (mises à jour automatiques) : installe AltStore depuis <a href="https://altstore.io" rel="noopener">altstore.io</a>, puis dans AltStore › Sources › <b>+</b>, ajoute cette adresse :
-            <div class="copy"><code id="altsrc">https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json</code><button type="button" data-copy="altsrc">Copier</button></div>
-            et installe Cache-Cache depuis la source.</li>
-          <li><b>Avec Sideloadly</b> (Windows ou Mac) : télécharge le fichier iPhone ci-dessous sur ton ordinateur, branche ton iPhone et glisse le fichier dans <a href="https://sideloadly.io" rel="noopener">Sideloadly</a>.</li>
-          <li>Sur l'iPhone : Réglages › Général › VPN et gestion de l'appareil › <b>fais confiance</b> à ton identifiant Apple. Depuis iOS 16, active aussi le <b>mode développeur</b>.</li>
-        </ol>
-        <a class="btn primary" id="dlIpa" href="CacheCache-iOS.ipa" download><span class="ic">🍏</span><span>Fichier pour iPhone (.ipa)<small id="ipaInfo">à installer avec Sideloadly</small></span></a>
-        <p class="note">Avec un identifiant Apple gratuit, Apple limite l'appli à 7 jours : AltStore la renouvelle tout seul, avec Sideloadly il suffit de la réinstaller (tes stats sont gardées). L'appli te prévient quand une nouvelle version sort.</p>
+        <p class="lead">Sur iPhone, Cache-Cache s'installe avec <b>AltStore</b>, un magasin d'applis gratuit qui le garde aussi à jour. Il faut un ordinateur Windows ou Mac <b>une seule fois</b>, pour installer AltStore sur l'iPhone.</p>
+
+        <div class="stage" id="altstore-pc">
+          <div class="stage-h"><span class="num">1</span><div><h3>Installe AltStore</h3><p class="where">💻 Sur l'ordinateur · une seule fois · 10 minutes</p></div></div>
+          <div class="sendpc"><p><b>Tu es sur ton iPhone ?</b> Cette étape se fait sur un ordinateur : envoie-toi le lien de cette page.</p><button type="button" id="sharePage">Envoyer le lien</button></div>
+          <div class="tabs ostabs" role="tablist" aria-label="Ordinateur">
+            <button role="tab" type="button" data-os="win" aria-selected="true">🪟 Windows</button>
+            <button role="tab" type="button" data-os="mac" aria-selected="false">🍎 Mac</button>
+          </div>
+          <ol data-os-list="win">
+            <li><b>Installe iTunes et iCloud</b> depuis le site d'Apple, pas ceux du Microsoft Store :<br>
+              <a class="chip" href="https://www.apple.com/itunes/download/win64" rel="noopener">⬇️ iTunes</a><a class="chip" href="https://updates.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41950005E/iCloudSetup.exe" rel="noopener">⬇️ iCloud</a></li>
+            <li><b>Télécharge AltServer</b>, dézippe le fichier et lance <code class="k">Setup.exe</code>.<br>
+              <a class="btn alt" href="https://cdn.altstore.io/file/altstore/altinstaller.zip" rel="noopener"><span class="ic">⬇️</span><span>AltServer pour Windows<small>officiel (altstore.io) · gratuit</small></span></a></li>
+            <li>Tape <b>AltServer</b> dans la recherche Windows, fais un clic droit › <b>Exécuter en tant qu'administrateur</b> et accepte l'accès au réseau. Son icône en forme de losange apparaît près de l'horloge (flèche <b>^</b> si elle est cachée).</li>
+            <li><b>Branche l'iPhone</b> en USB, déverrouille-le et touche <b>Faire confiance</b>. Dans iTunes, sur la page de l'iPhone, coche l'option de <b>synchronisation en Wi-Fi</b>.</li>
+            <li>Clique sur l'icône AltServer › <b>Install AltStore</b> › ton iPhone, puis saisis ton identifiant Apple.</li>
+          </ol>
+          <ol data-os-list="mac" hidden>
+            <li><b>Télécharge AltServer</b> (macOS 11 ou plus récent), dézippe-le, glisse AltServer dans <b>Applications</b> et ouvre-le : son icône apparaît dans la barre des menus.<br>
+              <a class="btn alt" href="https://cdn.altstore.io/file/altstore/altserver.zip" rel="noopener"><span class="ic">⬇️</span><span>AltServer pour Mac<small>officiel (altstore.io) · gratuit</small></span></a></li>
+            <li><b>Branche l'iPhone</b>, déverrouille-le et touche <b>Faire confiance</b>. Dans le Finder, clique sur l'iPhone et coche l'option qui l'<b>affiche en Wi-Fi</b>.</li>
+            <li>Clique sur l'icône AltServer › <b>Install AltStore</b> › ton iPhone, puis saisis ton identifiant Apple.</li>
+          </ol>
+          <p class="sub">Puis sur l'iPhone :</p>
+          <ol>
+            <li>Réglages › Général › <b>VPN et gestion de l'appareil</b> › ton identifiant Apple › <b>Faire confiance</b>.</li>
+            <li>Réglages › Confidentialité et sécurité › <b>Mode développeur</b> › active-le, puis laisse l'iPhone redémarrer.</li>
+          </ol>
+          <p class="hint">🔒 Ton identifiant Apple sert uniquement à Apple pour signer l'appli : il n'est envoyé ni à Cache-Cache ni à AltStore. AltStore n'apparaît pas sur l'écran d'accueil ? Redémarre l'iPhone.</p>
+        </div>
+
+        <div class="stage" id="altstore">
+          <div class="stage-h"><span class="num">2</span><div><h3>Installe Cache-Cache</h3><p class="where">📱 Sur l'iPhone · 1 minute</p></div></div>
+          <p>Une fois AltStore installé, touche ce bouton : AltStore s'ouvre sur la source Cache-Cache. Ajoute-la, puis touche <b>FREE</b> à côté de Cache-Cache.</p>
+          <a class="btn primary" id="openAlt" href="altstore://source?url=https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json"><span class="ic">✨</span><span>Ouvrir dans AltStore<small>source Cache-Cache</small></span></a>
+          <div class="qrmini"><img id="qrAlt" alt="QR code de cette étape"><p><b>Tu es sur l'ordinateur ?</b><br>Scanne ce code avec l'appareil photo de l'iPhone : cette étape s'ouvre directement, avec le bouton.</p></div>
+          <p class="sub">Le bouton ne marche pas ? Dans AltStore › <b>Sources</b> › <b>+</b>, colle cette adresse :</p>
+          <div class="copy"><code id="altsrc">https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json</code><button type="button" data-copy="altsrc">Copier</button></div>
+        </div>
+
+        <div class="stage">
+          <div class="stage-h"><span class="num">3</span><div><h3>Ensuite, c'est automatique</h3><p class="where">🔄 Mises à jour et renouvellement</p></div></div>
+          <ul class="checks">
+            <li><b>Nouvelles versions</b> : l'appli te prévient, et AltStore l'installe (onglet <b>My Apps</b>).</li>
+            <li><b>Tous les 7 jours</b>, Apple demande de renouveler les applis installées avec un identifiant gratuit. AltStore le fait tout seul quand l'iPhone et l'ordinateur (AltServer ouvert) sont sur le même Wi-Fi. Tes stats sont gardées.</li>
+            <li><b>Sans ordinateur</b> : sur iOS 17.4 ou plus récent, dans AltStore › Settings › <b>Set up Remote AltServer…</b>, le renouvellement se fait depuis n'importe quel Wi-Fi.</li>
+          </ul>
+        </div>
+
+        <p class="note">⚠️ Sur altstore.io tu verras aussi <b>AltStore PAL</b>, qui s'installe sans ordinateur en Europe : il n'accepte que les applis validées par Apple, donc pas Cache-Cache. Prends bien <b>AltStore Classic</b> avec les liens ci-dessus. Avec un identifiant Apple gratuit, 3 applis au plus s'installent de cette façon (AltStore compris).</p>
+
+        <details class="other">
+          <summary>Autre solution : Sideloadly (sans AltStore)</summary>
+          <ol>
+            <li>Sur l'ordinateur, installe <a href="https://sideloadly.io" rel="noopener">Sideloadly</a> (sur Windows, avec iTunes et iCloud d'Apple, comme ci-dessus).</li>
+            <li>Télécharge le fichier iPhone ci-dessous, branche l'iPhone et glisse le fichier dans Sideloadly › <b>Start</b>.</li>
+            <li>Sur l'iPhone, fais confiance à ton identifiant Apple et active le mode développeur (comme à l'étape 1).</li>
+          </ol>
+          <a class="btn ghost" id="dlIpa" href="CacheCache-iOS.ipa" download><span class="ic">🍏</span><span>Fichier pour iPhone (.ipa)<small id="ipaInfo">à installer avec Sideloadly</small></span></a>
+          <p>Sans AltStore, rien ne se renouvelle tout seul : il faut réinstaller l'appli tous les 7 jours (tes stats sont gardées).</p>
+        </details>
       </div>
     </section>
 
@@ -265,9 +362,10 @@
         <details><summary>C'est vraiment gratuit ?</summary><p>Oui : pas de pub, pas d'achat dans l'appli, pas de compte à créer.</p></details>
         <details><summary>Faut-il Internet pour jouer ?</summary><p>Non. Sur le même Wi-Fi (ou le partage de connexion d'un téléphone), tout se passe en local. Internet sert seulement aux parties à distance en 4G/5G, avec le code de la partie.</p></details>
         <details><summary>Pourquoi l'appli n'est pas sur le Play Store ou l'App Store ?</summary><p>Elle est distribuée directement ici, gratuitement. Sur Android, l'installation d'un fichier APK est prévue par le système. Sur iPhone, Apple impose AltStore ou Sideloadly pour les applis hors App Store.</p></details>
+        <details><summary>Mon identifiant Apple est-il en sécurité avec AltStore ?</summary><p>AltServer l'utilise pour demander à Apple de signer les applis que tu installes : il est envoyé uniquement à Apple, jamais à Cache-Cache ni à l'équipe d'AltStore. Si tu préfères, tu peux utiliser un identifiant Apple secondaire, gratuit.</p></details>
         <details><summary>Combien de joueurs ?</summary><p>De 2 à 50 joueurs par partie, en solo ou en 2 à 4 équipes.</p></details>
         <details><summary>Et mes données ?</summary><p>Aucune donnée personnelle n'est collectée : ton pseudo et tes stats restent sur ton téléphone. Les parties par Internet sont chiffrées de bout en bout. Détails dans la <a href="politique-confidentialite.html">politique de confidentialité</a>.</p></details>
-        <details><summary>Comment avoir les nouvelles versions ?</summary><p>L'appli vérifie toute seule s'il existe une nouvelle version. Sur Android, elle la télécharge et te propose de l'installer. Sur iPhone, elle t'affiche une alerte, et AltStore peut faire la mise à jour pour toi.</p></details>
+        <details><summary>Comment avoir les nouvelles versions ?</summary><p>L'appli vérifie toute seule s'il existe une nouvelle version. Sur Android, elle la télécharge et te propose de l'installer. Sur iPhone, elle t'affiche une alerte et AltStore installe la nouvelle version (onglet My Apps).</p></details>
       </div>
     </section>
   </main>
@@ -289,6 +387,7 @@
   var ios = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
   var android = /Android/i.test(ua);
   document.documentElement.classList.add(android || ios ? 'is-mobile' : 'is-desktop');
+  if (ios) document.documentElement.classList.add('is-ios');
 
   // onglets Android / iPhone
   function tab(name) {
@@ -310,10 +409,43 @@
     $('#dockBtn').innerHTML = '<span class="ic">🍏</span><span>Installer sur iPhone</span>';
   }
 
+  // liens directs vers l'installation iPhone (#altstore, #altstore-pc) : ouvrir l'onglet puis faire défiler
+  function goHash() {
+    var h = location.hash.slice(1);
+    if (h !== 'altstore' && h !== 'altstore-pc' && !(h === 'installer' && ios)) return;
+    tab('ios');
+    var el = document.getElementById(h);
+    if (el) setTimeout(function () { el.scrollIntoView({ block: 'start' }); }, 60);
+  }
+  goHash(); addEventListener('hashchange', goHash);
+
+  // ordinateur Windows ou Mac (étape 1)
+  function os(name) {
+    document.querySelectorAll('[data-os]').forEach(function (b) { b.setAttribute('aria-selected', String(b.getAttribute('data-os') === name)); });
+    document.querySelectorAll('[data-os-list]').forEach(function (l) { l.hidden = l.getAttribute('data-os-list') !== name; });
+  }
+  document.querySelectorAll('[data-os]').forEach(function (b) { b.addEventListener('click', function () { os(b.getAttribute('data-os')); }); });
+  os(/Macintosh|Mac OS X/.test(ua) && !ios ? 'mac' : 'win');
+
+  // sur iPhone : s'envoyer le lien de l'étape 1 pour la faire sur l'ordinateur
+  var page = location.href.split('#')[0];
+  $('#sharePage').addEventListener('click', function () {
+    var b = this, url = page + '#altstore-pc';
+    if (navigator.share) { navigator.share({ title: 'Installer Cache-Cache sur iPhone', url: url }).catch(function () {}); return; }
+    var done = function () { b.textContent = 'Lien copié ✓'; setTimeout(function () { b.textContent = 'Envoyer le lien'; }, 2000); };
+    if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function () {});
+  });
+
   // barre de téléchargement quand le bouton principal n'est plus visible
   var dock = $('#dock');
   if ('IntersectionObserver' in window) {
-    new IntersectionObserver(function (es) { dock.classList.toggle('show', !es[0].isIntersecting); }).observe($('#cta'));
+    // cachée tant que le bouton du haut ou la partie « Installer » est à l'écran
+    var seen = {};
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { seen[e.target.id] = e.isIntersecting; });
+      dock.classList.toggle('show', !seen.cta && !seen.installer);
+    });
+    io.observe($('#cta')); io.observe($('#installer'));
   }
 
   // version en ligne (latest.json, mis à jour à chaque publication)
@@ -331,9 +463,11 @@
   try {
     var q = qrcode(0, 'M'); q.addData(location.href.split('#')[0]); q.make();
     $('#qr').src = q.createDataURL(4, 2);
+    var q2 = qrcode(0, 'M'); q2.addData(location.href.split('#')[0] + '#altstore'); q2.make();
+    $('#qrAlt').src = q2.createDataURL(4, 2);
   } catch (e) { /* pas de QR */ }
 
-  // copier l'adresse AltStore
+  // copier l'adresse de la source AltStore
   document.querySelectorAll('[data-copy]').forEach(function (b) {
     b.addEventListener('click', function () {
       var el = document.getElementById(b.getAttribute('data-copy')), txt = el.textContent;
