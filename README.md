@@ -1,13 +1,15 @@
 # 🎮 Terrain de Jeu — téléchargements
 
-Des **jeux grandeur nature** entre amis : **🙈 Cache-Cache** et **🗺️ Chasse au trésor**, en Wi-Fi ou en 4G/5G, avec les **Android et les iPhone** dans la même partie.
+Des **jeux entre amis** : **🙈 Cache-Cache**, **🗺️ Chasse au trésor** et **🐺 Loup-Garou** (avec une vraie voix off), en Wi-Fi ou en 4G/5G, avec les **Android et les iPhone** dans la même partie.
 
 **👉 Site de téléchargement : https://laziizaa.github.io/cache-cache-releases/**
 
-**Version actuelle : 2.5.1** (2026-09-28)
+**Version actuelle : 2.6** (2026-09-28)
 
-• Nouveau logo : l'aire de jeux de « Terrain de Jeu », avec la mascotte cachée dans son buisson
-• Rappel de la 2.5 : au démarrage, choisis ton jeu : 🙈 Cache-Cache ou 🗺️ Chasse au trésor (balises GPS et QR codes, indices, énigmes, « chaud / froid », en équipes)
+• Nouveau jeu : 🐺 Loup-Garou ! Chacun reçoit une carte secrète sur son téléphone : loup-garou, villageois, voyante, sorcière, chasseur, Cupidon, salvateur, idiot du village
+• Une vraie voix off raconte la partie (une conteuse ou un conteur, au choix) : plus besoin de meneur de jeu, tout le monde joue. La nuit, ton téléphone vibre quand c'est ton tour
+• Débats, votes publics avec second tour en cas d'égalité, amoureux, dernière balle du chasseur… L'hôte peut aussi devenir le conteur et voir tous les rôles
+• Correction : un iPhone qui ouvre une partie sans accès à Internet ne ralentit plus le salon
 
 ## 🤖 Android
 

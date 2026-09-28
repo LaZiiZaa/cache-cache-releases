@@ -1,7 +1,7 @@
 {
   "name": "Terrain de Jeu",
   "identifier": "fr.nocteris.cachecache.source",
-  "subtitle": "Cache-cache et chasse au trésor grandeur nature",
+  "subtitle": "Cache-cache, chasse au trésor et loup-garou",
   "description": "La source officielle de Terrain de Jeu : l'appli s'installe et se met à jour depuis AltStore.",
   "sourceURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json",
   "iconURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/icon.png",
@@ -16,14 +16,24 @@
       "name": "Terrain de Jeu",
       "bundleIdentifier": "fr.nocteris.cachecache",
       "developerName": "Nocteris",
-      "subtitle": "Cache-cache et chasse au trésor grandeur nature",
-      "localizedDescription": "Des jeux grandeur nature entre amis, en Wi-Fi ou en 4G/5G, Android et iPhone dans la même partie. Cache-Cache : sonar, QR « Touché », radar Bluetooth, pouvoirs, équipes, variantes et Grande traque. Chasse au trésor : balises GPS et QR codes, indices, énigmes, « chaud / froid », en équipes. Gratuit, sans pub, sans compte.",
+      "subtitle": "Cache-cache, chasse au trésor et loup-garou",
+      "localizedDescription": "Des jeux entre amis, en Wi-Fi ou en 4G/5G, Android et iPhone dans la même partie. Cache-Cache : sonar, QR « Touché », radar Bluetooth, pouvoirs, équipes, variantes et Grande traque. Chasse au trésor : balises GPS et QR codes, indices, énigmes, « chaud / froid », en équipes. Loup-Garou : rôles secrets, votes et une vraie voix off qui raconte la partie. Gratuit, sans pub, sans compte.",
       "iconURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/icon.png",
       "tintColor": "#2EE6A6",
       "category": "games",
       "screenshots": [
         {
           "imageURL": "https://laziizaa.github.io/cache-cache-releases/assets/shots/accueil.jpg",
+          "width": 540,
+          "height": 960
+        },
+        {
+          "imageURL": "https://laziizaa.github.io/cache-cache-releases/assets/shots/loupgarou-carte.jpg",
+          "width": 540,
+          "height": 960
+        },
+        {
+          "imageURL": "https://laziizaa.github.io/cache-cache-releases/assets/shots/loupgarou-vote.jpg",
           "width": 540,
           "height": 960
         },
@@ -70,14 +80,14 @@
       ],
       "versions": [
         {
-          "version": "2.5.1",
-          "buildVersion": "11",
+          "version": "2.6",
+          "buildVersion": "12",
           "date": "2026-09-28",
-          "localizedDescription": "• Nouveau logo : l'aire de jeux de « Terrain de Jeu », avec la mascotte cachée dans son buisson\n• Rappel de la 2.5 : au démarrage, choisis ton jeu : 🙈 Cache-Cache ou 🗺️ Chasse au trésor (balises GPS et QR codes, indices, énigmes, « chaud / froid », en équipes)",
+          "localizedDescription": "• Nouveau jeu : 🐺 Loup-Garou ! Chacun reçoit une carte secrète sur son téléphone : loup-garou, villageois, voyante, sorcière, chasseur, Cupidon, salvateur, idiot du village\n• Une vraie voix off raconte la partie (une conteuse ou un conteur, au choix) : plus besoin de meneur de jeu, tout le monde joue. La nuit, ton téléphone vibre quand c'est ton tour\n• Débats, votes publics avec second tour en cas d'égalité, amoureux, dernière balle du chasseur… L'hôte peut aussi devenir le conteur et voir tous les rôles\n• Correction : un iPhone qui ouvre une partie sans accès à Internet ne ralentit plus le salon",
           "downloadURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-          "size": 1090156,
+          "size": 4818115,
           "minOSVersion": "15.0",
-          "sha256": "295f1b7d637fc99f4df00a503801218863a77b2504ce3767dc94491f62ba9847"
+          "sha256": "9eadd4f48b0798be5786e3583e7bc5027d25a642c0a56d12f656d944f5d5524d"
         }
       ],
       "appPermissions": {

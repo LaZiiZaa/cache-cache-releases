@@ -1,7 +1,7 @@
 {
-  "version": 11,
-  "name": "2.5.1",
-  "notes": "• Nouveau logo : l'aire de jeux de « Terrain de Jeu », avec la mascotte cachée dans son buisson\n• Rappel de la 2.5 : au démarrage, choisis ton jeu : 🙈 Cache-Cache ou 🗺️ Chasse au trésor (balises GPS et QR codes, indices, énigmes, « chaud / froid », en équipes)",
+  "version": 12,
+  "name": "2.6",
+  "notes": "• Nouveau jeu : 🐺 Loup-Garou ! Chacun reçoit une carte secrète sur son téléphone : loup-garou, villageois, voyante, sorcière, chasseur, Cupidon, salvateur, idiot du village\n• Une vraie voix off raconte la partie (une conteuse ou un conteur, au choix) : plus besoin de meneur de jeu, tout le monde joue. La nuit, ton téléphone vibre quand c'est ton tour\n• Débats, votes publics avec second tour en cas d'égalité, amoureux, dernière balle du chasseur… L'hôte peut aussi devenir le conteur et voir tous les rôles\n• Correction : un iPhone qui ouvre une partie sans accès à Internet ne ralentit plus le salon",
   "date": "2026-09-28",
   "page": "https://laziizaa.github.io/cache-cache-releases/",
   "app": "Terrain de Jeu",
@@ -14,11 +14,11 @@
     "date": "2026-09-28"
   },
   "ios": {
-    "version": 11,
-    "name": "2.5.1",
+    "version": 12,
+    "name": "2.6",
     "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-    "sha256": "295f1b7d637fc99f4df00a503801218863a77b2504ce3767dc94491f62ba9847",
-    "size": 1090156,
+    "sha256": "9eadd4f48b0798be5786e3583e7bc5027d25a642c0a56d12f656d944f5d5524d",
+    "size": 4818115,
     "date": "2026-09-28",
     "page": "https://laziizaa.github.io/cache-cache-releases/#altstore",
     "altstore": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json"

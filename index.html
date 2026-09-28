@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Terrain de Jeu — Cache-Cache et Chasse au trésor</title>
-<meta name="description" content="Terrain de Jeu : cache-cache et chasse au trésor grandeur nature avec ton téléphone. Sonar, radar, QR codes, balises GPS, énigmes. Gratuit, sans pub, Android et iPhone.">
+<title>Terrain de Jeu — Cache-Cache, Chasse au trésor et Loup-Garou</title>
+<meta name="description" content="Terrain de Jeu : cache-cache et chasse au trésor grandeur nature, et loup-garou raconté par une vraie voix off. Sonar, radar, QR codes, balises GPS, rôles secrets. Gratuit, sans pub, Android et iPhone.">
 <meta name="theme-color" content="#0B0A1A">
-<meta property="og:title" content="Terrain de Jeu — cache-cache et chasse au trésor grandeur nature">
-<meta property="og:description" content="Cache-cache avec sonar et radar, chasse au trésor avec balises GPS, QR codes et énigmes. Gratuit, sans pub, Android et iPhone ensemble.">
+<meta property="og:title" content="Terrain de Jeu — cache-cache, chasse au trésor et loup-garou">
+<meta property="og:description" content="Cache-cache avec sonar et radar, chasse au trésor avec balises GPS et énigmes, loup-garou avec une voix off. Gratuit, sans pub, Android et iPhone ensemble.">
 <meta property="og:image" content="assets/og.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" href="assets/favicon.png">
@@ -108,7 +108,12 @@
   .hub-logo .lids { animation: blink 5s linear infinite; transform-box: fill-box; transform-origin: center; }
   .f.tr { background: linear-gradient(135deg, rgba(255,214,107,.22), rgba(255,122,69,.16)); }
   .eyebrow.gold { color: var(--amber); }
-  #tresor { margin-top: 70px; }
+  #tresor, #loupgarou { margin-top: 70px; }
+  .eyebrow.violet { color: #c9b8ff; }
+  .f.ww { background: linear-gradient(135deg, rgba(154,143,224,.28), rgba(46,42,134,.3)); }
+  .voices { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+  .voices button { font: 800 14px var(--body); color: #fff; border: 1px solid rgba(255,255,255,.18); background: rgba(0,0,0,.28); border-radius: 14px; padding: 10px 14px; cursor: pointer; }
+  .voices button.on { background: linear-gradient(135deg, #7C5CFF, #FF5CA8); border-color: transparent; }
   .logos { display: flex; align-items: flex-end; gap: 4px; }
   .logos .logo { width: min(210px, 42vw); }
   .tr-logo { filter: drop-shadow(0 22px 44px rgba(255,214,107,.2)); }
@@ -221,7 +226,7 @@
 <div class="wrap">
   <header class="top">
     <a class="mini" href="#"><img src="assets/favicon.png" alt=""> Terrain de Jeu</a>
-    <nav><a href="#jeu">Cache-Cache</a><a href="#tresor">Chasse au trésor</a><a href="#installer">Installer</a><a href="#questions">Questions</a></nav>
+    <nav><a href="#jeu">Cache-Cache</a><a href="#tresor">Chasse au trésor</a><a href="#loupgarou">Loup-Garou</a><a href="#installer">Installer</a><a href="#questions">Questions</a></nav>
   </header>
 
   <main>
@@ -229,7 +234,7 @@
       <div>
         <svg class="logo hub-logo site" viewBox="18 16 72 76" aria-hidden="true"><defs><linearGradient id="hlMint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#52F5C2"/><stop offset="1" stop-color="#0F9A71"/></linearGradient><linearGradient id="hlGrass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34d9a3"/><stop offset="1" stop-color="#0b7f5d"/></linearGradient><linearGradient id="hlGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe98f"/><stop offset="1" stop-color="#f0b43a"/></linearGradient><linearGradient id="hlPink" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff86c0"/><stop offset="1" stop-color="#d23d91"/></linearGradient><linearGradient id="hlSlide" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a58cff"/><stop offset="1" stop-color="#5f3de6"/></linearGradient><radialGradient id="hlGlow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#7CFFD4" stop-opacity=".38"/><stop offset="1" stop-color="#7CFFD4" stop-opacity="0"/></radialGradient><clipPath id="hlClip"><rect x="18" y="16" width="72" height="76" rx="30"/></clipPath></defs><circle cx="54" cy="58" r="33" fill="url(#hlGlow)"/><path class="moon" d="M34 23.5a7.4 7.4 0 1 0 7.1 9.6a5.9 5.9 0 1 1 -7.1 -9.6z" fill="#FFD66B"/><g stroke="#FFCF5A" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M29 82 L35 46 L41 82"/><path d="M33 46 H60"/></g><g class="swing"><g stroke="#ece6ff" stroke-width="1.4" stroke-linecap="round"><path d="M44 47.5 V63.5"/><path d="M53 47.5 V63.5"/></g><rect x="41.5" y="62.5" width="14" height="4" rx="2" fill="url(#hlPink)"/></g><path d="M63 43 V33.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/><path class="flag" d="M63.6 33.5 L72 36.3 L63.6 39.1 Z" fill="url(#hlPink)"/><g stroke="#FFCF5A" stroke-width="3" stroke-linecap="round"><path d="M60 45 V82"/><path d="M66.5 45 V82"/></g><g stroke="#FFCF5A" stroke-width="2"><path d="M60 54 H66.5M60 62 H66.5M60 70 H66.5"/></g><rect x="57.8" y="43" width="11" height="4.6" rx="2.2" fill="url(#hlGold)"/><path d="M66.5 46.5 C 71 47, 72.4 50.5, 73.6 55 C 75.6 62, 78 67.5, 82 71 L 78.3 76 C 73.7 71.8, 70.8 65, 68.9 58 C 68.2 55.4, 67.6 53.6, 66.5 53 Z" fill="url(#hlSlide)"/><path d="M68 48.4 C 70.6 49.1, 71.3 51.4, 72.3 55.2 C 74.2 62.2, 76.4 67.6, 80.2 71.2" fill="none" stroke="#fff" stroke-width="1.1" stroke-linecap="round" opacity=".55"/><g clip-path="url(#hlClip)"><path d="M6 86 C 26 74, 82 74, 102 86 V112 H6 Z" fill="url(#hlGrass)"/></g><g class="peek"><g fill="url(#hlMint)"><circle cx="36" cy="82" r="7.5"/><circle cx="46" cy="78" r="10"/><circle cx="56" cy="83" r="7"/><rect x="28.5" y="81" width="34.5" height="9" rx="4.5"/></g><g fill="#0B7A5B" opacity=".5"><circle cx="38" cy="86.5" r="1.4"/><circle cx="54" cy="87" r="1.2"/></g><ellipse cx="41.7" cy="77.5" rx="3.9" ry="4.6" fill="#fff"/><ellipse cx="50.3" cy="77.5" rx="3.9" ry="4.6" fill="#fff"/><g class="pupils"><circle cx="42.9" cy="78.2" r="2.1" fill="#150F33"/><circle cx="51.6" cy="78.2" r="2.1" fill="#150F33"/><circle cx="43.6" cy="77.3" r=".7" fill="#fff"/><circle cx="52.3" cy="77.3" r=".7" fill="#fff"/></g><g class="lids" fill="#17a97d"><ellipse cx="41.7" cy="77.5" rx="4.3" ry="5"/><ellipse cx="50.3" cy="77.5" rx="4.3" ry="5"/></g></g><g transform="translate(83 44) scale(0.35555555555555557)"><path class="tw t1" d="M0 -9L2.2 -2.2L9 0L2.2 2.2L0 9L-2.2 2.2L-9 0L-2.2 -2.2Z" fill="#FFE58A"/></g><g transform="translate(49 30) scale(0.24444444444444446)"><path class="tw t2" d="M0 -9L2.2 -2.2L9 0L2.2 2.2L0 9L-2.2 2.2L-9 0L-2.2 -2.2Z" fill="#FFE58A"/></g><g transform="translate(25 50) scale(0.2)"><path class="tw t3" d="M0 -9L2.2 -2.2L9 0L2.2 2.2L0 9L-2.2 2.2L-9 0L-2.2 -2.2Z" fill="#fff"/></g></svg>
         <h1 class="brand">Terrain <i>de</i> Jeu</h1>
-        <p class="tagline">Cache-cache et chasse au trésor grandeur nature, avec ton téléphone dans la poche.</p>
+        <p class="tagline">Cache-cache, chasse au trésor et loup-garou entre amis, avec ton téléphone dans la poche.</p>
         <div class="cta" id="cta">
           <a class="btn primary" id="dlAndroid" href="CacheCache.apk" download><span class="ic">🤖</span><span>Télécharger pour Android<small id="apkInfo">Fichier APK · gratuit</small></span></a>
           <a class="btn ghost" id="dlIos" href="#installer" data-tab="ios"><span class="ic">🍏</span><span>Installer sur iPhone<small>avec AltStore · gratuit</small></span></a>
@@ -274,7 +279,7 @@
     </section>
 
     <section id="tresor">
-      <p class="eyebrow gold">🗺️ Nouveau · Chasse au trésor</p>
+      <p class="eyebrow gold">🗺️ Chasse au trésor</p>
       <h2>Une chasse au trésor, préparée en 5 minutes</h2>
       <div class="steps">
         <div class="step"><h3>On pose les balises</h3><p>L'organisateur marche jusqu'à chaque cachette et appuie sur « Ajouter une balise ici » : position GPS, indice, énigme si on veut.</p></div>
@@ -295,6 +300,33 @@
         <figure><img src="assets/shots/tresor-indice.jpg" alt="Indice d'une balise" loading="lazy"><figcaption>Côté coureur</figcaption></figure>
         <figure><img src="assets/shots/tresor-direct.jpg" alt="Suivi en direct par l'organisateur" loading="lazy"><figcaption>L'organisateur en direct</figcaption></figure>
         <figure><img src="assets/shots/tresor-fin.jpg" alt="Victoire d'une équipe" loading="lazy"><figcaption>La victoire</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="loupgarou">
+      <p class="eyebrow violet">🐺 Nouveau · Loup-Garou</p>
+      <h2>Le Loup-Garou, raconté par une vraie voix</h2>
+      <div class="steps">
+        <div class="step"><h3>Chacun sa carte</h3><p>Asseyez-vous en cercle. Chaque téléphone reçoit une carte secrète : loup-garou, villageois, voyante, sorcière…</p></div>
+        <div class="step"><h3>La nuit tombe</h3><p>Le conteur appelle les rôles un par un. Ton téléphone vibre quand c'est ton tour : tu agis en secret, écran caché.</p></div>
+        <div class="step"><h3>Le village vote</h3><p>Au matin, on découvre les victimes, on débat, puis on vote pour éliminer un suspect. Les loups seront-ils démasqués&nbsp;?</p></div>
+      </div>
+
+      <div class="feat">
+        <div class="f big ww"><div class="e">🎙️</div><h3>Une voix off, pas de meneur</h3><p>Le téléphone de l'hôte raconte toute la partie, avec ambiance de nuit, hurlements et cloche du matin : tout le monde peut jouer. Une conteuse ou un conteur, au choix.</p>
+          <div class="voices"><button type="button" data-voice="assets/voix-conteuse.mp3">▶ Écouter la conteuse</button><button type="button" data-voice="assets/voix-conteur.mp3">▶ Écouter le conteur</button></div></div>
+        <div class="f"><div class="e">🔮</div><h3>8 rôles</h3><p>Loups-garous, villageois, voyante, sorcière, chasseur, Cupidon et ses amoureux, salvateur, idiot du village.</p></div>
+        <div class="f"><div class="e">📳</div><h3>Rien ne se devine</h3><p>La nuit, tout le monde touche son écran pour noter ses soupçons : impossible de savoir qui agit vraiment.</p></div>
+        <div class="f"><div class="e">🗳️</div><h3>Votes en direct</h3><p>Chacun vote sur son téléphone, les voix s'affichent en direct. Égalité&nbsp;? Second tour.</p></div>
+        <div class="f"><div class="e">🎭</div><h3>Ou un conteur humain</h3><p>L'hôte peut aussi mener la partie : il voit tous les rôles et les choix de la nuit.</p></div>
+      </div>
+
+      <div class="shots" aria-label="Captures d'écran du Loup-Garou">
+        <figure><img src="assets/shots/loupgarou-carte.jpg" alt="Carte secrète d'un loup-garou" loading="lazy"><figcaption>Ta carte secrète</figcaption></figure>
+        <figure><img src="assets/shots/loupgarou-nuit.jpg" alt="Les loups choisissent leur victime" loading="lazy"><figcaption>La nuit des loups</figcaption></figure>
+        <figure><img src="assets/shots/loupgarou-voyante.jpg" alt="Vision de la voyante" loading="lazy"><figcaption>La voyante</figcaption></figure>
+        <figure><img src="assets/shots/loupgarou-vote.jpg" alt="Vote du village" loading="lazy"><figcaption>Le vote du village</figcaption></figure>
+        <figure><img src="assets/shots/loupgarou-conteur.jpg" alt="Écran du conteur" loading="lazy"><figcaption>Le conteur voit tout</figcaption></figure>
       </div>
     </section>
 
@@ -392,7 +424,7 @@
         <details><summary>Faut-il Internet pour jouer ?</summary><p>Non. Sur le même Wi-Fi (ou le partage de connexion d'un téléphone), tout se passe en local. Internet sert seulement aux parties à distance en 4G/5G, avec le code de la partie.</p></details>
         <details><summary>Pourquoi l'appli n'est pas sur le Play Store ou l'App Store ?</summary><p>Elle est distribuée directement ici, gratuitement. Sur Android, l'installation d'un fichier APK est prévue par le système. Sur iPhone, Apple impose AltStore ou Sideloadly pour les applis hors App Store.</p></details>
         <details><summary>Mon identifiant Apple est-il en sécurité avec AltStore ?</summary><p>AltServer l'utilise pour demander à Apple de signer les applis que tu installes : il est envoyé uniquement à Apple, jamais à Terrain de Jeu ni à l'équipe d'AltStore. Si tu préfères, tu peux utiliser un identifiant Apple secondaire, gratuit.</p></details>
-        <details><summary>Combien de joueurs ?</summary><p>De 2 à 50 joueurs par partie, en solo ou en 2 à 4 équipes.</p></details>
+        <details><summary>Combien de joueurs ?</summary><p>De 2 à 50 joueurs par partie, en solo ou en 2 à 4 équipes. Pour le Loup-Garou, il faut au moins 4 joueurs (idéalement de 6 à 12).</p></details>
         <details><summary>Et mes données ?</summary><p>Aucune donnée personnelle n'est collectée : ton pseudo et tes stats restent sur ton téléphone. Les parties par Internet sont chiffrées de bout en bout. Détails dans la <a href="politique-confidentialite.html">politique de confidentialité</a>.</p></details>
         <details><summary>Comment avoir les nouvelles versions ?</summary><p>L'appli vérifie toute seule s'il existe une nouvelle version. Sur Android, elle la télécharge et te propose de l'installer. Sur iPhone, elle t'affiche une alerte et AltStore installe la nouvelle version (onglet My Apps).</p></details>
       </div>
@@ -506,6 +538,21 @@
     });
   });
   function select(el) { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+
+  // voix du conteur (Loup-Garou)
+  var voice = null;
+  document.querySelectorAll('[data-voice]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var src = b.getAttribute('data-voice'), playing = voice && !voice.paused && voice.getAttribute('src') === src;
+      if (voice) voice.pause();
+      document.querySelectorAll('[data-voice]').forEach(function (x) { x.classList.remove('on'); x.textContent = x.textContent.replace('⏸', '▶'); });
+      if (playing) return;
+      voice = new Audio(src);
+      voice.onended = function () { b.classList.remove('on'); b.textContent = b.textContent.replace('⏸', '▶'); };
+      voice.play().catch(function () {});
+      b.classList.add('on'); b.textContent = b.textContent.replace('▶', '⏸');
+    });
+  });
 
   // son de la vidéo
   var v = $('#pub'), snd = $('#sound');
