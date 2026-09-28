@@ -1,13 +1,15 @@
-# 🌿 Cache-Cache — téléchargements
+# 🎮 Terrain de Jeu — téléchargements
 
-Le **cache-cache grandeur nature**, en Wi-Fi ou en 4G/5G, avec les **Android et les iPhone** dans la même partie.
+Des **jeux grandeur nature** entre amis : **🙈 Cache-Cache** et **🗺️ Chasse au trésor**, en Wi-Fi ou en 4G/5G, avec les **Android et les iPhone** dans la même partie.
 
 **👉 Site de téléchargement : https://laziizaa.github.io/cache-cache-releases/**
 
-**Version actuelle : 2.4** (2026-09-28)
+**Version actuelle : 2.5** (2026-09-28)
 
-• Anti-triche (réglable dans le salon) : un caché en mode avion trop longtemps est compté trouvé ; faux GPS, déplacement impossible, Bluetooth ou localisation coupés sont signalés à tous (éliminés en mode strict)
-• Compatible avec Android 16 : affichage plein écran, nouveau geste « retour », partie qui reste active écran éteint
+• L'appli devient « Terrain de Jeu » : au démarrage, choisis ton jeu
+• Nouveau jeu : 🗺️ Chasse au trésor ! L'organisateur pose ses balises sur le terrain (GPS, indice, énigme) et imprime les QR codes ; les joueurs, seuls ou en équipes, suivent les indices dans l'ordre ou non, avec un bouton « chaud / froid »
+• L'organisateur suit tout en direct ; la première équipe qui trouve toutes les balises gagne
+• Le cache-cache ne change pas : tes parties, stats et succès sont conservés
 
 ## 🤖 Android
 
@@ -22,7 +24,7 @@ Le **cache-cache grandeur nature**, en Wi-Fi ou en 4G/5G, avec les **Android et 
 Version iPhone : disponible.
 
 - **Avec AltStore** (mises à jour automatiques) : dans AltStore › Sources › **+**, ajoute
-  `https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json`, puis installe Cache-Cache.
+  `https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json`, puis installe Terrain de Jeu.
 - **Avec Sideloadly** (Windows / Mac) : télécharge **[CacheCache-iOS.ipa](https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa)**, branche l'iPhone et glisse le fichier dans Sideloadly.
 
 Avec un identifiant Apple gratuit, l'appli doit être renouvelée tous les 7 jours (AltStore le fait tout seul). L'appli te prévient quand une nouvelle version sort.
