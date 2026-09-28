@@ -1,8 +1,8 @@
 {
-  "version": 8,
-  "name": "2.3",
-  "notes": "• Mise à jour automatique de l'appli\n• Version iPhone : Android et iPhone jouent ensemble (Wi-Fi et 4G/5G)\n• Les Android trouvent aussi les salons ouverts sur iPhone",
-  "date": "2026-09-27",
+  "version": 9,
+  "name": "2.4",
+  "notes": "• Anti-triche (réglable dans le salon) : un caché en mode avion trop longtemps est compté trouvé ; faux GPS, déplacement impossible, Bluetooth ou localisation coupés sont signalés à tous (éliminés en mode strict)\n• Compatible avec Android 16 : affichage plein écran, nouveau geste « retour », partie qui reste active écran éteint",
+  "date": "2026-09-28",
   "page": "https://laziizaa.github.io/cache-cache-releases/",
   "app": "Cache-Cache",
   "android": {
@@ -14,13 +14,13 @@
     "date": "2026-09-27"
   },
   "ios": {
-    "version": 8,
-    "name": "2.3",
+    "version": 9,
+    "name": "2.4",
     "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-    "sha256": "6a6fbf65ef9c2e54a5fd75a4e601bbf4eabc947d9e8fa1329e68f6eb07e0b7a3",
-    "size": 984678,
-    "date": "2026-09-27",
-    "page": "https://laziizaa.github.io/cache-cache-releases/#installer",
+    "sha256": "4bee35235367be1f9776e27cc6edf8e76a78eae5dfda34cefa9fe48136df53c4",
+    "size": 989060,
+    "date": "2026-09-28",
+    "page": "https://laziizaa.github.io/cache-cache-releases/#altstore",
     "altstore": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json"
   }
 }

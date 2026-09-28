@@ -60,14 +60,14 @@
       ],
       "versions": [
         {
-          "version": "2.3",
-          "buildVersion": "8",
-          "date": "2026-09-27",
-          "localizedDescription": "• Mise à jour automatique de l'appli\n• Version iPhone : Android et iPhone jouent ensemble (Wi-Fi et 4G/5G)\n• Les Android trouvent aussi les salons ouverts sur iPhone",
+          "version": "2.4",
+          "buildVersion": "9",
+          "date": "2026-09-28",
+          "localizedDescription": "• Anti-triche (réglable dans le salon) : un caché en mode avion trop longtemps est compté trouvé ; faux GPS, déplacement impossible, Bluetooth ou localisation coupés sont signalés à tous (éliminés en mode strict)\n• Compatible avec Android 16 : affichage plein écran, nouveau geste « retour », partie qui reste active écran éteint",
           "downloadURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-          "size": 984678,
+          "size": 989060,
           "minOSVersion": "15.0",
-          "sha256": "6a6fbf65ef9c2e54a5fd75a4e601bbf4eabc947d9e8fa1329e68f6eb07e0b7a3"
+          "sha256": "4bee35235367be1f9776e27cc6edf8e76a78eae5dfda34cefa9fe48136df53c4"
         }
       ],
       "appPermissions": {

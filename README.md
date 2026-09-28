@@ -4,11 +4,10 @@ Le **cache-cache grandeur nature**, en Wi-Fi ou en 4G/5G, avec les **Android et 
 
 **👉 Site de téléchargement : https://laziizaa.github.io/cache-cache-releases/**
 
-**Version actuelle : 2.3** (2026-09-27)
+**Version actuelle : 2.4** (2026-09-28)
 
-• Mise à jour automatique de l'appli
-• Version iPhone : Android et iPhone jouent ensemble (Wi-Fi et 4G/5G)
-• Les Android trouvent aussi les salons ouverts sur iPhone
+• Anti-triche (réglable dans le salon) : un caché en mode avion trop longtemps est compté trouvé ; faux GPS, déplacement impossible, Bluetooth ou localisation coupés sont signalés à tous (éliminés en mode strict)
+• Compatible avec Android 16 : affichage plein écran, nouveau geste « retour », partie qui reste active écran éteint
 
 ## 🤖 Android
 

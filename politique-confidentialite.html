@@ -18,16 +18,18 @@
 <li>En Wi-Fi, les échanges restent sur le réseau local. En 4G/5G, ils transitent par un relais Internet (MQTT) et sont <strong>chiffrés de bout en bout</strong> (AES-GCM, clé dérivée du code de la partie) : le relais ne peut pas les lire.</li>
 <li>La force du signal Wi-Fi est transmise à l'hôte pour l'« indice Wi-Fi ».</li>
 </ul>
+<h2>Anti-triche</h2>
+<p>Si l'hôte l'active (c'est le réglage par défaut), chaque téléphone indique à l'hôte, pendant la manche seulement : si son Bluetooth et sa localisation sont allumés, si sa position est simulée par une autre appli et s'il a fait un déplacement impossible. L'hôte en déduit des alertes affichées aux joueurs de la partie. Rien n'est envoyé ailleurs ni conservé après la partie.</p>
 <h2>Autorisations</h2>
 <ul>
 <li><strong>Position</strong> : utilisée pour la zone de jeu (seul l'indicateur « dans / hors zone » est envoyé à l'hôte) et, en mode Grande traque, envoyée au téléphone de l'hôte de la partie pour répondre automatiquement aux questions. La position du fugitif n'est jamais affichée aux autres joueurs ; celle des chercheurs est visible par les autres chercheurs. Rien n'est conservé après la partie.</li>
 <li><strong>Carte</strong> : les fonds de carte sont téléchargés depuis OpenStreetMap, qui reçoit comme tout site web l'adresse IP et la zone affichée.</li>
 <li><strong>Bluetooth</strong> : radar « chaud / froid » ; une balise anonyme (identifiant aléatoire de partie) est émise pendant la manche.</li>
 <li><strong>Caméra</strong> : scan des QR codes de jeu, sans enregistrement d'image.</li>
-<li><strong>Installation d'applis</strong> : uniquement pour installer une mise à jour de Cache-Cache (téléchargée depuis le site officiel ou depuis le téléphone de l'hôte), toujours après votre confirmation.</li>
+<li><strong>Installation d'applis</strong> (version téléchargée depuis le site uniquement) : pour installer une mise à jour de Cache-Cache (téléchargée depuis le site officiel ou depuis le téléphone de l'hôte), toujours après votre confirmation. La version Google Play ne demande pas cette autorisation.</li>
 </ul>
 <h2>Mises à jour</h2>
-<p>L'appli vérifie de temps en temps s'il existe une nouvelle version en lisant un petit fichier public hébergé sur GitHub. Comme pour tout site web, GitHub reçoit alors l'adresse IP du téléphone ; aucune autre information n'est envoyée. Le téléchargement automatique des mises à jour peut être coupé dans Aide › Réglages.</p>
+<p>La version installée depuis Google Play est mise à jour par Google Play. La version téléchargée depuis le site vérifie de temps en temps s'il existe une nouvelle version en lisant un petit fichier public hébergé sur GitHub. Comme pour tout site web, GitHub reçoit alors l'adresse IP du téléphone ; aucune autre information n'est envoyée. Le téléchargement automatique des mises à jour peut être coupé dans Aide › Réglages.</p>
 <h2>Rapports de plantage</h2>
 <p>En cas de plantage, un rapport technique est enregistré sur le téléphone. Il n'est envoyé que si vous choisissez de le partager.</p>
 <h2>Enfants</h2>
