@@ -80,14 +80,14 @@
       ],
       "versions": [
         {
-          "version": "2.6",
-          "buildVersion": "12",
+          "version": "2.6.1",
+          "buildVersion": "13",
           "date": "2026-09-28",
-          "localizedDescription": "• Nouveau jeu : 🐺 Loup-Garou ! Chacun reçoit une carte secrète sur son téléphone : loup-garou, villageois, voyante, sorcière, chasseur, Cupidon, salvateur, idiot du village\n• Une vraie voix off raconte la partie (une conteuse ou un conteur, au choix) : plus besoin de meneur de jeu, tout le monde joue. La nuit, ton téléphone vibre quand c'est ton tour\n• Débats, votes publics avec second tour en cas d'égalité, amoureux, dernière balle du chasseur… L'hôte peut aussi devenir le conteur et voir tous les rôles\n• Correction : un iPhone qui ouvre une partie sans accès à Internet ne ralentit plus le salon",
+          "localizedDescription": "• 🏅 46 nouveaux succès, soit 60 à débloquer ! Rangés par jeu : Général, Cache-Cache, Chasse au trésor et Loup-Garou\n• Quelques exemples : 🔥 En feu (3 victoires d'affilée), 🎯 Coup triple, 🏴‍☠️ Capitaine pirate, ⚡ Éclair, ❓ Sphinx, 🎭 Imposteur, 🌑 Loup solitaire, 🔮 Troisième œil, 💞 Âmes sœurs, 🦉 Noctambule, 🏅 Collectionneur…\n• Nouvelles stats : meilleure série de victoires, jours de jeu, énigmes résolues\n• Rappel de la 2.6 : nouveau jeu 🐺 Loup-Garou, raconté par une vraie voix off",
           "downloadURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-          "size": 4818115,
+          "size": 4821772,
           "minOSVersion": "15.0",
-          "sha256": "9eadd4f48b0798be5786e3583e7bc5027d25a642c0a56d12f656d944f5d5524d"
+          "sha256": "26a7efcf08382b44f2d5f417c4579b16d0d5fc5a5233bad5805571d1e6965571"
         }
       ],
       "appPermissions": {
