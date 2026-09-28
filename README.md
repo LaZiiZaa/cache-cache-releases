@@ -4,12 +4,10 @@ Des **jeux grandeur nature** entre amis : **🙈 Cache-Cache** et **🗺️ Chas
 
 **👉 Site de téléchargement : https://laziizaa.github.io/cache-cache-releases/**
 
-**Version actuelle : 2.5** (2026-09-28)
+**Version actuelle : 2.5.1** (2026-09-28)
 
-• L'appli devient « Terrain de Jeu » : au démarrage, choisis ton jeu
-• Nouveau jeu : 🗺️ Chasse au trésor ! L'organisateur pose ses balises sur le terrain (GPS, indice, énigme) et imprime les QR codes ; les joueurs, seuls ou en équipes, suivent les indices dans l'ordre ou non, avec un bouton « chaud / froid »
-• L'organisateur suit tout en direct ; la première équipe qui trouve toutes les balises gagne
-• Le cache-cache ne change pas : tes parties, stats et succès sont conservés
+• Nouveau logo : l'aire de jeux de « Terrain de Jeu », avec la mascotte cachée dans son buisson
+• Rappel de la 2.5 : au démarrage, choisis ton jeu : 🙈 Cache-Cache ou 🗺️ Chasse au trésor (balises GPS et QR codes, indices, énigmes, « chaud / froid », en équipes)
 
 ## 🤖 Android
 

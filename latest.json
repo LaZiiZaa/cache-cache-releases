@@ -1,7 +1,7 @@
 {
-  "version": 10,
-  "name": "2.5",
-  "notes": "• L'appli devient « Terrain de Jeu » : au démarrage, choisis ton jeu\n• Nouveau jeu : 🗺️ Chasse au trésor ! L'organisateur pose ses balises sur le terrain (GPS, indice, énigme) et imprime les QR codes ; les joueurs, seuls ou en équipes, suivent les indices dans l'ordre ou non, avec un bouton « chaud / froid »\n• L'organisateur suit tout en direct ; la première équipe qui trouve toutes les balises gagne\n• Le cache-cache ne change pas : tes parties, stats et succès sont conservés",
+  "version": 11,
+  "name": "2.5.1",
+  "notes": "• Nouveau logo : l'aire de jeux de « Terrain de Jeu », avec la mascotte cachée dans son buisson\n• Rappel de la 2.5 : au démarrage, choisis ton jeu : 🙈 Cache-Cache ou 🗺️ Chasse au trésor (balises GPS et QR codes, indices, énigmes, « chaud / froid », en équipes)",
   "date": "2026-09-28",
   "page": "https://laziizaa.github.io/cache-cache-releases/",
   "app": "Terrain de Jeu",
@@ -14,11 +14,11 @@
     "date": "2026-09-28"
   },
   "ios": {
-    "version": 10,
-    "name": "2.5",
+    "version": 11,
+    "name": "2.5.1",
     "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-    "sha256": "23117f2eb348c49edacbfae990b89ddb2de77ab5846f65c9223fde8756e48d1f",
-    "size": 1011530,
+    "sha256": "295f1b7d637fc99f4df00a503801218863a77b2504ce3767dc94491f62ba9847",
+    "size": 1090156,
     "date": "2026-09-28",
     "page": "https://laziizaa.github.io/cache-cache-releases/#altstore",
     "altstore": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json"

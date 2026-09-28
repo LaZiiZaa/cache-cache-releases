@@ -70,14 +70,14 @@
       ],
       "versions": [
         {
-          "version": "2.5",
-          "buildVersion": "10",
+          "version": "2.5.1",
+          "buildVersion": "11",
           "date": "2026-09-28",
-          "localizedDescription": "• L'appli devient « Terrain de Jeu » : au démarrage, choisis ton jeu\n• Nouveau jeu : 🗺️ Chasse au trésor ! L'organisateur pose ses balises sur le terrain (GPS, indice, énigme) et imprime les QR codes ; les joueurs, seuls ou en équipes, suivent les indices dans l'ordre ou non, avec un bouton « chaud / froid »\n• L'organisateur suit tout en direct ; la première équipe qui trouve toutes les balises gagne\n• Le cache-cache ne change pas : tes parties, stats et succès sont conservés",
+          "localizedDescription": "• Nouveau logo : l'aire de jeux de « Terrain de Jeu », avec la mascotte cachée dans son buisson\n• Rappel de la 2.5 : au démarrage, choisis ton jeu : 🙈 Cache-Cache ou 🗺️ Chasse au trésor (balises GPS et QR codes, indices, énigmes, « chaud / froid », en équipes)",
           "downloadURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-          "size": 1011530,
+          "size": 1090156,
           "minOSVersion": "15.0",
-          "sha256": "23117f2eb348c49edacbfae990b89ddb2de77ab5846f65c9223fde8756e48d1f"
+          "sha256": "295f1b7d637fc99f4df00a503801218863a77b2504ce3767dc94491f62ba9847"
         }
       ],
       "appPermissions": {
