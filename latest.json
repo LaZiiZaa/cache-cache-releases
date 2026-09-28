@@ -6,12 +6,12 @@
   "page": "https://laziizaa.github.io/cache-cache-releases/",
   "app": "Cache-Cache",
   "android": {
-    "version": 8,
-    "name": "2.3",
+    "version": 9,
+    "name": "2.4",
     "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache.apk",
-    "sha256": "16b67551baa2046745e080b46cf4ef0e5d5a8f7dd09b474c0aa486da8c20a5f0",
-    "size": 1129994,
-    "date": "2026-09-27"
+    "sha256": "2b6112d8b8d7590803550d1b3ac934a234bf41680272bdeb0823d7ce240615a3",
+    "size": 1109514,
+    "date": "2026-09-28"
   },
   "ios": {
     "version": 9,
