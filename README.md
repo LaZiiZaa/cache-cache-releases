@@ -13,7 +13,7 @@ Des **jeux entre amis** : **🙈 Cache-Cache**, **🗺️ Chasse au trésor** et
 
 ## 🤖 Android
 
-👉 **[Télécharger CacheCache.apk](https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache.apk)** (5.4 Mo)
+👉 **[Télécharger CacheCache.apk](https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache.apk)** (5.5 Mo)
 
 1. Ouvre le fichier téléchargé sur ton téléphone.
 2. Si Android le demande, autorise ton navigateur à installer des applis.
