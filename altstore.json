@@ -80,14 +80,14 @@
       ],
       "versions": [
         {
-          "version": "2.6.1",
-          "buildVersion": "13",
-          "date": "2026-09-28",
-          "localizedDescription": "• 🏅 46 nouveaux succès, soit 60 à débloquer ! Rangés par jeu : Général, Cache-Cache, Chasse au trésor et Loup-Garou\n• Quelques exemples : 🔥 En feu (3 victoires d'affilée), 🎯 Coup triple, 🏴‍☠️ Capitaine pirate, ⚡ Éclair, ❓ Sphinx, 🎭 Imposteur, 🌑 Loup solitaire, 🔮 Troisième œil, 💞 Âmes sœurs, 🦉 Noctambule, 🏅 Collectionneur…\n• Nouvelles stats : meilleure série de victoires, jours de jeu, énigmes résolues\n• Rappel de la 2.6 : nouveau jeu 🐺 Loup-Garou, raconté par une vraie voix off",
+          "version": "2.7",
+          "buildVersion": "14",
+          "date": "2026-09-29",
+          "localizedDescription": "• Nouveau look : un thème « Nocturne » plus sobre et élégant, avec une nouvelle icône (la lune au-dessus des collines)\n• Chaque jeu a maintenant son propre univers : Cache-Cache façon infiltration (radar vert), Chasse au trésor façon expédition (laiton et carte ancienne), Loup-Garou gothique (clair de lune et rouge sang)\n• Nouveaux emblèmes animés, nouvelles polices, pictogrammes au trait à la place des gros émojis\n• Avatars, écrans de fin et images à partager redessinés aux couleurs de chaque jeu",
           "downloadURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-          "size": 4821772,
+          "size": 4842839,
           "minOSVersion": "15.0",
-          "sha256": "26a7efcf08382b44f2d5f417c4579b16d0d5fc5a5233bad5805571d1e6965571"
+          "sha256": "a55496cef2f1c3992996e6ff1ab389ab7f76f1822ac740da0fa57d51147d2b5a"
         }
       ],
       "appPermissions": {

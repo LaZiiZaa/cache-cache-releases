@@ -1,8 +1,8 @@
 {
-  "version": 13,
-  "name": "2.6.1",
-  "notes": "• 🏅 46 nouveaux succès, soit 60 à débloquer ! Rangés par jeu : Général, Cache-Cache, Chasse au trésor et Loup-Garou\n• Quelques exemples : 🔥 En feu (3 victoires d'affilée), 🎯 Coup triple, 🏴‍☠️ Capitaine pirate, ⚡ Éclair, ❓ Sphinx, 🎭 Imposteur, 🌑 Loup solitaire, 🔮 Troisième œil, 💞 Âmes sœurs, 🦉 Noctambule, 🏅 Collectionneur…\n• Nouvelles stats : meilleure série de victoires, jours de jeu, énigmes résolues\n• Rappel de la 2.6 : nouveau jeu 🐺 Loup-Garou, raconté par une vraie voix off",
-  "date": "2026-09-28",
+  "version": 14,
+  "name": "2.7",
+  "notes": "• Nouveau look : un thème « Nocturne » plus sobre et élégant, avec une nouvelle icône (la lune au-dessus des collines)\n• Chaque jeu a maintenant son propre univers : Cache-Cache façon infiltration (radar vert), Chasse au trésor façon expédition (laiton et carte ancienne), Loup-Garou gothique (clair de lune et rouge sang)\n• Nouveaux emblèmes animés, nouvelles polices, pictogrammes au trait à la place des gros émojis\n• Avatars, écrans de fin et images à partager redessinés aux couleurs de chaque jeu",
+  "date": "2026-09-29",
   "page": "https://laziizaa.github.io/cache-cache-releases/",
   "app": "Terrain de Jeu",
   "android": {
@@ -14,12 +14,12 @@
     "date": "2026-09-28"
   },
   "ios": {
-    "version": 13,
-    "name": "2.6.1",
+    "version": 14,
+    "name": "2.7",
     "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-    "sha256": "26a7efcf08382b44f2d5f417c4579b16d0d5fc5a5233bad5805571d1e6965571",
-    "size": 4821772,
-    "date": "2026-09-28",
+    "sha256": "a55496cef2f1c3992996e6ff1ab389ab7f76f1822ac740da0fa57d51147d2b5a",
+    "size": 4842839,
+    "date": "2026-09-29",
     "page": "https://laziizaa.github.io/cache-cache-releases/#altstore",
     "altstore": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json"
   }

@@ -4,12 +4,12 @@ Des **jeux entre amis** : **🙈 Cache-Cache**, **🗺️ Chasse au trésor** et
 
 **👉 Site de téléchargement : https://laziizaa.github.io/cache-cache-releases/**
 
-**Version actuelle : 2.6.1** (2026-09-28)
+**Version actuelle : 2.7** (2026-09-29)
 
-• 🏅 46 nouveaux succès, soit 60 à débloquer ! Rangés par jeu : Général, Cache-Cache, Chasse au trésor et Loup-Garou
-• Quelques exemples : 🔥 En feu (3 victoires d'affilée), 🎯 Coup triple, 🏴‍☠️ Capitaine pirate, ⚡ Éclair, ❓ Sphinx, 🎭 Imposteur, 🌑 Loup solitaire, 🔮 Troisième œil, 💞 Âmes sœurs, 🦉 Noctambule, 🏅 Collectionneur…
-• Nouvelles stats : meilleure série de victoires, jours de jeu, énigmes résolues
-• Rappel de la 2.6 : nouveau jeu 🐺 Loup-Garou, raconté par une vraie voix off
+• Nouveau look : un thème « Nocturne » plus sobre et élégant, avec une nouvelle icône (la lune au-dessus des collines)
+• Chaque jeu a maintenant son propre univers : Cache-Cache façon infiltration (radar vert), Chasse au trésor façon expédition (laiton et carte ancienne), Loup-Garou gothique (clair de lune et rouge sang)
+• Nouveaux emblèmes animés, nouvelles polices, pictogrammes au trait à la place des gros émojis
+• Avatars, écrans de fin et images à partager redessinés aux couleurs de chaque jeu
 
 ## 🤖 Android
 
