@@ -80,14 +80,14 @@
       ],
       "versions": [
         {
-          "version": "3.0",
-          "buildVersion": "17",
+          "version": "3.1",
+          "buildVersion": "18",
           "date": "2026-09-30",
-          "localizedDescription": "• 7 épopées, des jeux qui durent : Agent secret, Enquête criminelle, Les Olympiades, Loup-Garou au long cours, Rallye photo, Territoire et Géocache entre amis\n• Parties longues (une soirée, un week-end, une semaine…) : fermez l'appli, la partie vous attend. L'hôte la reprend depuis l'accueil, les joueurs y reviennent en un geste\n• Agent secret : 100 missions, heures calmes la nuit, dénonciation, et l'hôte arbitre les contestations\n• Enquête criminelle : deux scénarios complets avec personnages, secrets et indices, raconté acte par acte\n• Les Olympiades : un tournoi par équipes qui enchaîne les jeux de l'appli, avec classement général\n• 29 jeux au total, Android et iPhone ensemble, en Wi-Fi ou en 4G/5G",
+          "localizedDescription": "• Nouvel accueil : chaque jeu a son affiche, dans les couleurs de son univers\n• « On joue à quoi ? » : dites combien vous êtes, où et combien de temps, l'appli vous propose trois jeux\n• À la une : le jeu du jour et les nouveautés\n• Tes jeux : tes favoris (le cœur sur la page d'un jeu) et tes derniers jeux, à portée de main\n• Filtre par nombre de joueurs, en plus de la durée\n• Le jeu s'ouvre depuis son affiche, son médaillon s'envole jusqu'à sa page",
           "downloadURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-          "size": 5564872,
+          "size": 5573660,
           "minOSVersion": "15.0",
-          "sha256": "74f177f3150b2d03c4e64932ca0aaffef08ab56d8aa76ec2fc708c8676aec1ec"
+          "sha256": "8232becd88aa82058c25579f82898679da36361f6c0be998f3460c505179c174"
         }
       ],
       "appPermissions": {

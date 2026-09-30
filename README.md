@@ -4,14 +4,14 @@ Des **jeux entre amis** : **🙈 Cache-Cache**, **🗺️ Chasse au trésor** et
 
 **👉 Site de téléchargement : https://laziizaa.github.io/cache-cache-releases/**
 
-**Version actuelle : 3.0** (2026-09-30)
+**Version actuelle : 3.1** (2026-09-30)
 
-• 7 épopées, des jeux qui durent : Agent secret, Enquête criminelle, Les Olympiades, Loup-Garou au long cours, Rallye photo, Territoire et Géocache entre amis
-• Parties longues (une soirée, un week-end, une semaine…) : fermez l'appli, la partie vous attend. L'hôte la reprend depuis l'accueil, les joueurs y reviennent en un geste
-• Agent secret : 100 missions, heures calmes la nuit, dénonciation, et l'hôte arbitre les contestations
-• Enquête criminelle : deux scénarios complets avec personnages, secrets et indices, raconté acte par acte
-• Les Olympiades : un tournoi par équipes qui enchaîne les jeux de l'appli, avec classement général
-• 29 jeux au total, Android et iPhone ensemble, en Wi-Fi ou en 4G/5G
+• Nouvel accueil : chaque jeu a son affiche, dans les couleurs de son univers
+• « On joue à quoi ? » : dites combien vous êtes, où et combien de temps, l'appli vous propose trois jeux
+• À la une : le jeu du jour et les nouveautés
+• Tes jeux : tes favoris (le cœur sur la page d'un jeu) et tes derniers jeux, à portée de main
+• Filtre par nombre de joueurs, en plus de la durée
+• Le jeu s'ouvre depuis son affiche, son médaillon s'envole jusqu'à sa page
 
 ## 🤖 Android
 
