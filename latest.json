@@ -1,8 +1,8 @@
 {
-  "version": 14,
-  "name": "2.7",
-  "notes": "• Nouveau look : un thème « Nocturne » plus sobre et élégant, avec une nouvelle icône (la lune au-dessus des collines)\n• Chaque jeu a maintenant son propre univers : Cache-Cache façon infiltration (radar vert), Chasse au trésor façon expédition (laiton et carte ancienne), Loup-Garou gothique (clair de lune et rouge sang)\n• Nouveaux emblèmes animés, nouvelles polices, pictogrammes au trait à la place des gros émojis\n• Avatars, écrans de fin et images à partager redessinés aux couleurs de chaque jeu",
-  "date": "2026-09-29",
+  "version": 15,
+  "name": "2.8",
+  "notes": "• 13 nouveaux jeux ! Réflexe, La Bombe, Chaises musicales, Quiz buzzer, Qui de nous…, L'Intrus, L'Espion, Le Bluff, Mimes et mots, Dessine et devine, Le Téléphone dessiné, Chat perché et 1, 2, 3… Soleil !\n• Un nouvel accueil qui range les 16 jeux par durée : courts, moyens ou longs\n• Changez de jeu sans quitter le salon : le bouton « Changer de jeu » propose tous les jeux\n• Chaque nouveau jeu a son thème, son emblème et ses succès à débloquer\n• Android et iPhone jouent ensemble à tous les jeux, en Wi-Fi ou en 4G/5G",
+  "date": "2026-09-30",
   "page": "https://laziizaa.github.io/cache-cache-releases/",
   "app": "Terrain de Jeu",
   "android": {
@@ -14,12 +14,12 @@
     "date": "2026-09-29"
   },
   "ios": {
-    "version": 14,
-    "name": "2.7",
+    "version": 15,
+    "name": "2.8",
     "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-    "sha256": "a55496cef2f1c3992996e6ff1ab389ab7f76f1822ac740da0fa57d51147d2b5a",
-    "size": 4842839,
-    "date": "2026-09-29",
+    "sha256": "3d576fcd866529ea0e04228d291af2adcd930593682e0872d867fc5d27dcba18",
+    "size": 5099676,
+    "date": "2026-09-30",
     "page": "https://laziizaa.github.io/cache-cache-releases/#altstore",
     "altstore": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json"
   }

@@ -80,14 +80,14 @@
       ],
       "versions": [
         {
-          "version": "2.7",
-          "buildVersion": "14",
-          "date": "2026-09-29",
-          "localizedDescription": "• Nouveau look : un thème « Nocturne » plus sobre et élégant, avec une nouvelle icône (la lune au-dessus des collines)\n• Chaque jeu a maintenant son propre univers : Cache-Cache façon infiltration (radar vert), Chasse au trésor façon expédition (laiton et carte ancienne), Loup-Garou gothique (clair de lune et rouge sang)\n• Nouveaux emblèmes animés, nouvelles polices, pictogrammes au trait à la place des gros émojis\n• Avatars, écrans de fin et images à partager redessinés aux couleurs de chaque jeu",
+          "version": "2.8",
+          "buildVersion": "15",
+          "date": "2026-09-30",
+          "localizedDescription": "• 13 nouveaux jeux ! Réflexe, La Bombe, Chaises musicales, Quiz buzzer, Qui de nous…, L'Intrus, L'Espion, Le Bluff, Mimes et mots, Dessine et devine, Le Téléphone dessiné, Chat perché et 1, 2, 3… Soleil !\n• Un nouvel accueil qui range les 16 jeux par durée : courts, moyens ou longs\n• Changez de jeu sans quitter le salon : le bouton « Changer de jeu » propose tous les jeux\n• Chaque nouveau jeu a son thème, son emblème et ses succès à débloquer\n• Android et iPhone jouent ensemble à tous les jeux, en Wi-Fi ou en 4G/5G",
           "downloadURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-          "size": 4842839,
+          "size": 5099676,
           "minOSVersion": "15.0",
-          "sha256": "a55496cef2f1c3992996e6ff1ab389ab7f76f1822ac740da0fa57d51147d2b5a"
+          "sha256": "3d576fcd866529ea0e04228d291af2adcd930593682e0872d867fc5d27dcba18"
         }
       ],
       "appPermissions": {
@@ -99,6 +99,7 @@
           "NSLocalNetworkUsageDescription": "Terrain de Jeu trouve et rejoint les parties des autres joueurs connectés au même Wi-Fi.",
           "NSLocationAlwaysAndWhenInUseUsageDescription": "La localisation sert à la zone de jeu, à la Grande traque, et garde la partie active quand l'écran est verrouillé. Elle n'est jamais enregistrée.",
           "NSLocationWhenInUseUsageDescription": "La localisation sert à la zone de jeu, à la Grande traque, et garde la partie active quand l'écran est verrouillé. Elle n'est jamais enregistrée.",
+          "NSMotionUsageDescription": "Au jeu « 1, 2, 3… Soleil ! », le téléphone sent si tu bouges quand le soleil se retourne.",
           "NSPhotoLibraryAddUsageDescription": "Enregistre l'image des résultats de la partie.",
           "NSPhotoLibraryUsageDescription": "Choisis une photo à envoyer aux chercheurs pendant la Grande traque."
         }
