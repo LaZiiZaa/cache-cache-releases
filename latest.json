@@ -6,11 +6,11 @@
   "page": "https://laziizaa.github.io/cache-cache-releases/",
   "app": "Terrain de Jeu",
   "android": {
-    "version": 17,
-    "name": "3.0",
+    "version": 18,
+    "name": "3.1",
     "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache.apk",
-    "sha256": "b0522858586e35546e61884a171ad162e55b52ed397f5beb6ed0fdee01cc0442",
-    "size": 6269394,
+    "sha256": "df2cc4ad513a76859dbf64784a92cf03af11519ef4b8d1bc18a63193545d470e",
+    "size": 6281682,
     "date": "2026-09-30"
   },
   "ios": {
