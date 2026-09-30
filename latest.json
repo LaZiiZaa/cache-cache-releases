@@ -1,7 +1,7 @@
 {
-  "version": 16,
-  "name": "2.9",
-  "notes": "• 6 nouveaux jeux dehors ! Capture du drapeau, Le Traître, Gendarmes et voleurs, Conquête, Course d'orientation et Survie zombie\n• Carte GPS en direct : l'organisateur place la frontière, les bases, les zones ou les balises sur la carte… ou en y allant\n• QR codes à imprimer (drapeaux, lieux de mission, butin, balises) : imprimés une fois, valables pour toutes les parties\n• Radar Bluetooth, coéquipiers sur la carte, flèche et distance vers ton objectif\n• Sur iPhone, l'hôte continue d'arbitrer même écran verrouillé\n• 22 jeux au total : Android et iPhone jouent ensemble, en Wi-Fi ou en 4G/5G",
+  "version": 17,
+  "name": "3.0",
+  "notes": "• 7 épopées, des jeux qui durent : Agent secret, Enquête criminelle, Les Olympiades, Loup-Garou au long cours, Rallye photo, Territoire et Géocache entre amis\n• Parties longues (une soirée, un week-end, une semaine…) : fermez l'appli, la partie vous attend. L'hôte la reprend depuis l'accueil, les joueurs y reviennent en un geste\n• Agent secret : 100 missions, heures calmes la nuit, dénonciation, et l'hôte arbitre les contestations\n• Enquête criminelle : deux scénarios complets avec personnages, secrets et indices, raconté acte par acte\n• Les Olympiades : un tournoi par équipes qui enchaîne les jeux de l'appli, avec classement général\n• 29 jeux au total, Android et iPhone ensemble, en Wi-Fi ou en 4G/5G",
   "date": "2026-09-30",
   "page": "https://laziizaa.github.io/cache-cache-releases/",
   "app": "Terrain de Jeu",
@@ -14,11 +14,11 @@
     "date": "2026-09-30"
   },
   "ios": {
-    "version": 16,
-    "name": "2.9",
+    "version": 17,
+    "name": "3.0",
     "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-    "sha256": "f448ee06f9cbdf31160b332c2daff3096fa242b1f0711d58cae54131cdf71af2",
-    "size": 5474681,
+    "sha256": "74f177f3150b2d03c4e64932ca0aaffef08ab56d8aa76ec2fc708c8676aec1ec",
+    "size": 5564872,
     "date": "2026-09-30",
     "page": "https://laziizaa.github.io/cache-cache-releases/#altstore",
     "altstore": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json"
