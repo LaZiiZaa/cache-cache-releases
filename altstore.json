@@ -80,14 +80,14 @@
       ],
       "versions": [
         {
-          "version": "3.1",
-          "buildVersion": "18",
+          "version": "3.2",
+          "buildVersion": "19",
           "date": "2026-09-30",
-          "localizedDescription": "• Nouvel accueil : chaque jeu a son affiche, dans les couleurs de son univers\n• « On joue à quoi ? » : dites combien vous êtes, où et combien de temps, l'appli vous propose trois jeux\n• À la une : le jeu du jour et les nouveautés\n• Tes jeux : tes favoris (le cœur sur la page d'un jeu) et tes derniers jeux, à portée de main\n• Filtre par nombre de joueurs, en plus de la durée\n• Le jeu s'ouvre depuis son affiche, son médaillon s'envole jusqu'à sa page",
+          "localizedDescription": "• Pictogrammes : les icônes de l'interface sont dessinées au trait, dans les couleurs de chaque jeu\n• Cartes aux couleurs du jeu : la carte prend la teinte de son univers (orange pour le drapeau, vert pour les zombies…)\n• Mode plein soleil : un écran clair et très contrasté pour bien lire dehors, avec le bouton soleil des jeux dehors ou dans ton profil\n• Les avatars, les couleurs d'équipe et les médailles restent en couleur",
           "downloadURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-          "size": 5573660,
+          "size": 5672833,
           "minOSVersion": "15.0",
-          "sha256": "8232becd88aa82058c25579f82898679da36361f6c0be998f3460c505179c174"
+          "sha256": "9262a3f4dc6b496da0b5470ea95bcbd986621aec09abbe8f6d3195d51b77af9c"
         }
       ],
       "appPermissions": {

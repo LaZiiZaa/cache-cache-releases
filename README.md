@@ -4,14 +4,12 @@ Des **jeux entre amis** : **🙈 Cache-Cache**, **🗺️ Chasse au trésor** et
 
 **👉 Site de téléchargement : https://laziizaa.github.io/cache-cache-releases/**
 
-**Version actuelle : 3.1** (2026-09-30)
+**Version actuelle : 3.2** (2026-09-30)
 
-• Nouvel accueil : chaque jeu a son affiche, dans les couleurs de son univers
-• « On joue à quoi ? » : dites combien vous êtes, où et combien de temps, l'appli vous propose trois jeux
-• À la une : le jeu du jour et les nouveautés
-• Tes jeux : tes favoris (le cœur sur la page d'un jeu) et tes derniers jeux, à portée de main
-• Filtre par nombre de joueurs, en plus de la durée
-• Le jeu s'ouvre depuis son affiche, son médaillon s'envole jusqu'à sa page
+• Pictogrammes : les icônes de l'interface sont dessinées au trait, dans les couleurs de chaque jeu
+• Cartes aux couleurs du jeu : la carte prend la teinte de son univers (orange pour le drapeau, vert pour les zombies…)
+• Mode plein soleil : un écran clair et très contrasté pour bien lire dehors, avec le bouton soleil des jeux dehors ou dans ton profil
+• Les avatars, les couleurs d'équipe et les médailles restent en couleur
 
 ## 🤖 Android
 
