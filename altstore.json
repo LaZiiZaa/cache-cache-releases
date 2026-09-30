@@ -80,14 +80,14 @@
       ],
       "versions": [
         {
-          "version": "2.8",
-          "buildVersion": "15",
+          "version": "2.9",
+          "buildVersion": "16",
           "date": "2026-09-30",
-          "localizedDescription": "• 13 nouveaux jeux ! Réflexe, La Bombe, Chaises musicales, Quiz buzzer, Qui de nous…, L'Intrus, L'Espion, Le Bluff, Mimes et mots, Dessine et devine, Le Téléphone dessiné, Chat perché et 1, 2, 3… Soleil !\n• Un nouvel accueil qui range les 16 jeux par durée : courts, moyens ou longs\n• Changez de jeu sans quitter le salon : le bouton « Changer de jeu » propose tous les jeux\n• Chaque nouveau jeu a son thème, son emblème et ses succès à débloquer\n• Android et iPhone jouent ensemble à tous les jeux, en Wi-Fi ou en 4G/5G",
+          "localizedDescription": "• 6 nouveaux jeux dehors ! Capture du drapeau, Le Traître, Gendarmes et voleurs, Conquête, Course d'orientation et Survie zombie\n• Carte GPS en direct : l'organisateur place la frontière, les bases, les zones ou les balises sur la carte… ou en y allant\n• QR codes à imprimer (drapeaux, lieux de mission, butin, balises) : imprimés une fois, valables pour toutes les parties\n• Radar Bluetooth, coéquipiers sur la carte, flèche et distance vers ton objectif\n• Sur iPhone, l'hôte continue d'arbitrer même écran verrouillé\n• 22 jeux au total : Android et iPhone jouent ensemble, en Wi-Fi ou en 4G/5G",
           "downloadURL": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-          "size": 5099676,
+          "size": 5474681,
           "minOSVersion": "15.0",
-          "sha256": "3d576fcd866529ea0e04228d291af2adcd930593682e0872d867fc5d27dcba18"
+          "sha256": "f448ee06f9cbdf31160b332c2daff3096fa242b1f0711d58cae54131cdf71af2"
         }
       ],
       "appPermissions": {

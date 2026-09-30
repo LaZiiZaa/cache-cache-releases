@@ -4,13 +4,14 @@ Des **jeux entre amis** : **🙈 Cache-Cache**, **🗺️ Chasse au trésor** et
 
 **👉 Site de téléchargement : https://laziizaa.github.io/cache-cache-releases/**
 
-**Version actuelle : 2.8** (2026-09-30)
+**Version actuelle : 2.9** (2026-09-30)
 
-• 13 nouveaux jeux ! Réflexe, La Bombe, Chaises musicales, Quiz buzzer, Qui de nous…, L'Intrus, L'Espion, Le Bluff, Mimes et mots, Dessine et devine, Le Téléphone dessiné, Chat perché et 1, 2, 3… Soleil !
-• Un nouvel accueil qui range les 16 jeux par durée : courts, moyens ou longs
-• Changez de jeu sans quitter le salon : le bouton « Changer de jeu » propose tous les jeux
-• Chaque nouveau jeu a son thème, son emblème et ses succès à débloquer
-• Android et iPhone jouent ensemble à tous les jeux, en Wi-Fi ou en 4G/5G
+• 6 nouveaux jeux dehors ! Capture du drapeau, Le Traître, Gendarmes et voleurs, Conquête, Course d'orientation et Survie zombie
+• Carte GPS en direct : l'organisateur place la frontière, les bases, les zones ou les balises sur la carte… ou en y allant
+• QR codes à imprimer (drapeaux, lieux de mission, butin, balises) : imprimés une fois, valables pour toutes les parties
+• Radar Bluetooth, coéquipiers sur la carte, flèche et distance vers ton objectif
+• Sur iPhone, l'hôte continue d'arbitrer même écran verrouillé
+• 22 jeux au total : Android et iPhone jouent ensemble, en Wi-Fi ou en 4G/5G
 
 ## 🤖 Android
 
