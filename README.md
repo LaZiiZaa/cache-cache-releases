@@ -1,6 +1,6 @@
 # 🎮 Terrain de Jeu — téléchargements
 
-Des **jeux entre amis** : **🙈 Cache-Cache**, **🗺️ Chasse au trésor** et **🐺 Loup-Garou** (avec une vraie voix off), en Wi-Fi ou en 4G/5G, avec les **Android et les iPhone** dans la même partie.
+**29 jeux entre amis**, en cercle, dehors ou sur plusieurs jours : cache-cache, capture du drapeau, chasse au trésor, loup-garou avec une vraie voix off, quiz… En Wi-Fi ou en 4G/5G, sur Android.
 
 **👉 Site de téléchargement : https://laziizaa.github.io/cache-cache-releases/**
 
@@ -18,16 +18,6 @@ Des **jeux entre amis** : **🙈 Cache-Cache**, **🗺️ Chasse au trésor** et
 1. Ouvre le fichier téléchargé sur ton téléphone.
 2. Si Android le demande, autorise ton navigateur à installer des applis.
 3. C'est tout : ensuite l'appli **se met à jour toute seule** (elle télécharge la nouvelle version et te propose de l'installer).
-
-## 📱 iPhone
-
-Version iPhone : disponible.
-
-- **Avec AltStore** (mises à jour automatiques) : dans AltStore › Sources › **+**, ajoute
-  `https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json`, puis installe Terrain de Jeu.
-- **Avec Sideloadly** (Windows / Mac) : télécharge **[CacheCache-iOS.ipa](https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa)**, branche l'iPhone et glisse le fichier dans Sideloadly.
-
-Avec un identifiant Apple gratuit, l'appli doit être renouvelée tous les 7 jours (AltStore le fait tout seul). L'appli te prévient quand une nouvelle version sort.
 
 ---
 

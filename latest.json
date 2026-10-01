@@ -12,15 +12,5 @@
     "sha256": "a946073170bdbdd477115429057239a77e15f8871d92bcc54f136d18b5c1380b",
     "size": 6379986,
     "date": "2026-09-30"
-  },
-  "ios": {
-    "version": 19,
-    "name": "3.2",
-    "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/CacheCache-iOS.ipa",
-    "sha256": "9262a3f4dc6b496da0b5470ea95bcbd986621aec09abbe8f6d3195d51b77af9c",
-    "size": 5672833,
-    "date": "2026-09-30",
-    "page": "https://laziizaa.github.io/cache-cache-releases/#altstore",
-    "altstore": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/altstore.json"
   }
 }
