@@ -1,14 +1,14 @@
 {
-  "name": "3.2",
-  "version": 19,
+  "name": "3.2.1",
+  "version": 1901,
   "date": "2026-10-05",
-  "notes": "Première version : Je n'ai jamais, Qui pourrait…, Paranoïa, Action ou vérité, et les versions soirée de La Bombe, du Quiz buzzer, de Réflexe et du Bluff. Mode sans alcool avec des gages.",
+  "notes": "Nouveau : la soirée à un seul téléphone. Entrez les prénoms, choisissez les modes (Apéro, Soirée, Délire, Hot), la durée et la dose, puis passez-vous le téléphone : défis, questions, votes, jeux et règles qui durent quelques cartes.",
   "android": {
-    "version": 19,
-    "name": "3.2",
+    "version": 1901,
+    "name": "3.2.1",
     "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/sante-nrw7kogqly/Sante.apk",
-    "sha256": "9e926f44a5aaf809add23c0eccd7653743bb5b494a40fce4b981ddf21d968ba9",
-    "size": 6400910,
+    "sha256": "90f50b197e26810716ef7f3ce1213e37aeef904212d6953125e4369f3098a29d",
+    "size": 6413342,
     "date": "2026-10-05"
   }
 }
