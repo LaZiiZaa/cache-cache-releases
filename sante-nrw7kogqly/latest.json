@@ -1,14 +1,14 @@
 {
-  "name": "3.2.1",
-  "version": 1901,
+  "name": "3.2.2",
+  "version": 1902,
   "date": "2026-10-05",
-  "notes": "Nouveau : la soirée à un seul téléphone. Entrez les prénoms, choisissez les modes (Apéro, Soirée, Délire, Hot), la durée et la dose, puis passez-vous le téléphone : défis, questions, votes, jeux et règles qui durent quelques cartes.",
+  "notes": "Nouveau : le mode Guerre. Les Rouges contre les Bleus : duels, batailles d'équipe et coups bas. Après chaque duel, touchez l'équipe gagnante ; à la fin, l'équipe perdante boit. Il se joue seul ou mélangé aux autres modes.",
   "android": {
-    "version": 1901,
-    "name": "3.2.1",
+    "version": 1902,
+    "name": "3.2.2",
     "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/sante-nrw7kogqly/Sante.apk",
-    "sha256": "90f50b197e26810716ef7f3ce1213e37aeef904212d6953125e4369f3098a29d",
-    "size": 6413342,
+    "sha256": "5968b51067fe4ee76e37da786b9009941694f7a30f3faf34654132bf5a1c6051",
+    "size": 6417438,
     "date": "2026-10-05"
   }
 }
