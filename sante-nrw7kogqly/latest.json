@@ -1,14 +1,14 @@
 {
-  "name": "3.2.4",
-  "version": 1904,
+  "name": "3.2.5",
+  "version": 1905,
   "date": "2026-10-05",
-  "notes": "Santé ! ne garde que ses propres jeux : la soirée à un seul téléphone et, à plusieurs téléphones, Je n'ai jamais, Qui pourrait…, Paranoïa et Action ou vérité.",
+  "notes": "4 nouveaux jeux inventés, à plusieurs téléphones : Le Saloon, Le Chrono aveugle, Le Verre qui déborde et L'Enchère.",
   "android": {
-    "version": 1904,
-    "name": "3.2.4",
+    "version": 1905,
+    "name": "3.2.5",
     "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/sante-nrw7kogqly/Sante.apk",
-    "sha256": "218659c3e0b64e5dd3fec189988046505bd0acebe8bebd49c87162ec019064a8",
-    "size": 6433822,
+    "sha256": "04a9135f2dfc44ba47f207ac878b79c072cb6b7a9a23bfd1986cfa2f6c5a20f0",
+    "size": 6450496,
     "date": "2026-10-05"
   }
 }
