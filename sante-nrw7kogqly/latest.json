@@ -1,0 +1,14 @@
+{
+  "name": "3.2",
+  "version": 19,
+  "date": "2026-10-05",
+  "notes": "Première version : Je n'ai jamais, Qui pourrait…, Paranoïa, Action ou vérité, et les versions soirée de La Bombe, du Quiz buzzer, de Réflexe et du Bluff. Mode sans alcool avec des gages.",
+  "android": {
+    "version": 19,
+    "name": "3.2",
+    "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/sante-nrw7kogqly/Sante.apk",
+    "sha256": "9e926f44a5aaf809add23c0eccd7653743bb5b494a40fce4b981ddf21d968ba9",
+    "size": 6400910,
+    "date": "2026-10-05"
+  }
+}
