@@ -1,13 +1,13 @@
 {
-  "name": "3.2.3",
-  "version": 1903,
+  "name": "3.2.4",
+  "version": 1904,
   "date": "2026-10-05",
-  "notes": "Près de 500 nouvelles cartes pour la soirée à un seul téléphone : plus de 750 en tout, réparties dans les modes Apéro, Soirée, Délire, Hot et Guerre.",
+  "notes": "Santé ! ne garde que ses propres jeux : la soirée à un seul téléphone et, à plusieurs téléphones, Je n'ai jamais, Qui pourrait…, Paranoïa et Action ou vérité.",
   "android": {
-    "version": 1903,
-    "name": "3.2.3",
+    "version": 1904,
+    "name": "3.2.4",
     "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/sante-nrw7kogqly/Sante.apk",
-    "sha256": "f4b4e67c1992a86b2ec89ba5f039047a10d6a55413bfc2f78749b32e341c88a9",
+    "sha256": "218659c3e0b64e5dd3fec189988046505bd0acebe8bebd49c87162ec019064a8",
     "size": 6433822,
     "date": "2026-10-05"
   }
