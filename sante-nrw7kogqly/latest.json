@@ -1,14 +1,14 @@
 {
-  "name": "3.2.2",
-  "version": 1902,
+  "name": "3.2.3",
+  "version": 1903,
   "date": "2026-10-05",
-  "notes": "Nouveau : le mode Guerre. Les Rouges contre les Bleus : duels, batailles d'équipe et coups bas. Après chaque duel, touchez l'équipe gagnante ; à la fin, l'équipe perdante boit. Il se joue seul ou mélangé aux autres modes.",
+  "notes": "Près de 500 nouvelles cartes pour la soirée à un seul téléphone : plus de 750 en tout, réparties dans les modes Apéro, Soirée, Délire, Hot et Guerre.",
   "android": {
-    "version": 1902,
-    "name": "3.2.2",
+    "version": 1903,
+    "name": "3.2.3",
     "url": "https://raw.githubusercontent.com/LaZiiZaa/cache-cache-releases/main/sante-nrw7kogqly/Sante.apk",
-    "sha256": "5968b51067fe4ee76e37da786b9009941694f7a30f3faf34654132bf5a1c6051",
-    "size": 6417438,
+    "sha256": "f4b4e67c1992a86b2ec89ba5f039047a10d6a55413bfc2f78749b32e341c88a9",
+    "size": 6433822,
     "date": "2026-10-05"
   }
 }
